@@ -220,6 +220,9 @@ RangerFacility_MapEvents:
 
 	def_warp_events
 ;	warp_event  8, 13, GLOBAL_TERMINAL_1F, 1
+	warp_event  4, 19, LITTLE_WATER, 1
+	warp_event  5, 19, LITTLE_WATER, 1
+
 
 	def_coord_events
 

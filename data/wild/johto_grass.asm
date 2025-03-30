@@ -2,6 +2,33 @@
 
 JohtoGrassWildMons:
 
+	def_grass_wildmons LITTLE_WATER
+	db 10 percent, 10 percent, 20 percent ; encounter rates: morn/day/nite
+	; morn
+	db 3, RATTATA
+	db 4, RATTATA
+	db 5, RATTATA
+	db 3, RATTATA
+	db 6, RATTATA
+	db 5, RATTATA
+	db 5, RATTATA
+	; day
+	db 3, RATTATA
+	db 4, RATTATA
+	db 5, RATTATA
+	db 3, RATTATA
+	db 6, RATTATA
+	db 5, RATTATA
+	db 5, RATTATA
+	; night
+	db 3, RATTATA
+	db 4, RATTATA
+	db 5, RATTATA
+	db 3, RATTATA
+	db 6, RATTATA
+	db 5, RATTATA
+	db 5, RATTATA
+
 	def_grass_wildmons SPROUT_TOWER_2F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn

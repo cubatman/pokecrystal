@@ -1,3 +1,7 @@
+SECTION "Map Scripts T", ROMX
+
+INCLUDE "maps/RangerFacility.asm"
+
 SECTION "Map Scripts 1", ROMX
 
 INCLUDE "maps/GoldenrodGym.asm"

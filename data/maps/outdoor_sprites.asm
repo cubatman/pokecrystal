@@ -30,8 +30,10 @@ OutdoorSprites:
 	dw NewBarkGroupSprites
 	dw SaffronGroupSprites
 	dw CherrygroveGroupSprites
+	dw RangerFacilityGroupSprites
 	assert_table_length NUM_MAP_GROUPS
 
+RangerFacilityGroupSprites:
 PalletGroupSprites:
 	db SPRITE_SUICUNE
 	db SPRITE_SILVER_TROPHY

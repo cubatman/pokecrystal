@@ -96,6 +96,7 @@ MACRO connection
 	endc
 ENDM
 
+	map_attributes RangerFacility, RANGER_FACILITY, $00, 0
 
 	map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	connection west, Route29, ROUTE_29, 0

@@ -31,6 +31,7 @@ OutdoorSprites:
 	dw SaffronGroupSprites
 	dw CherrygroveGroupSprites
 	dw RangerFacilityGroupSprites
+	dw HootHootHollowSprites
 	assert_table_length NUM_MAP_GROUPS
 
 RangerFacilityGroupSprites:
@@ -309,6 +310,7 @@ IndigoGroupSprites:
 	db SPRITE_POKE_BALL
 	db SPRITE_BOULDER
 
+HootHootHollowSprites:
 NewBarkGroupSprites:
 	db SPRITE_SUICUNE
 	db SPRITE_SILVER_TROPHY

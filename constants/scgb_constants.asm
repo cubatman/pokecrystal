@@ -46,6 +46,7 @@ DEF SCGB_DEFAULT EQU $ff
 ; PredefPals indexes (see gfx/sgb/predef.pal)
 ; GetPredefPal arguments (see engine/gfx/color.asm)
 	const_def
+	const PREDEFPAL_HOOTHOOTHOLLOW
 	const PREDEFPAL_RANGER_FACILITY
 	const PREDEFPAL_ROUTES
 	const PREDEFPAL_PALLET

@@ -505,4 +505,8 @@ ENDM
 	map_const RANGER_FACILITY,                               18, 10 ; 1
 	endgroup
 
-DEF NUM_MAP_GROUPS EQU const_value ; 27
+	newgroup HOOTHOOTHOLLOW                                        ; 28	
+	map_const LITTLE_WATER,                                  24, 12 ; 1
+	endgroup											
+
+DEF NUM_MAP_GROUPS EQU const_value ; 28

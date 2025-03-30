@@ -1049,4 +1049,7 @@ GoldenrodDeptStoreRoof_Blocks:
 RangerFacility_Blocks:
 	INCBIN "maps/RangerFacility.blk"
 
+LittleWater_Blocks:
+	INCBIN "maps/LittleWater.blk"
+
 ENDSECTION

@@ -96,6 +96,8 @@ MACRO connection
 	endc
 ENDM
 
+	map_attributes LittleWater, LITTLE_WATER, $05, 0
+
 	map_attributes RangerFacility, RANGER_FACILITY, $00, 0
 
 	map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST

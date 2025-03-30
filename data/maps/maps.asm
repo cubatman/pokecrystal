@@ -43,7 +43,8 @@ MapGroupPointers::
 	dw MapGroup_NewBark     ; 24
 	dw MapGroup_Saffron     ; 25
 	dw MapGroup_Cherrygrove ; 26
-	dw MapGroup_RangerFacility; 27
+	dw MapGroup_RangerFacility ; 27
+	dw MapGroup_LittleWater ; 28
 	assert_table_length NUM_MAP_GROUPS
 
 MapGroup_Olivine:
@@ -541,3 +542,7 @@ MapGroup_Cherrygrove:
 MapGroup_RangerFacility:
 	table_width MAP_LENGTH
 	map RangerFacility, TILESET_FACILITY, INDOOR, LANDMARK_NEW_BARK_TOWN, MUSIC_AZALEA_TOWN, FALSE, PALETTE_DAY, FISHGROUP_SHORE
+
+MapGroup_LittleWater:
+	table_width MAP_LENGTH
+	map LittleWater, TILESET_JOHTO, ROUTE, LANDMARK_NEW_BARK_TOWN, MUSIC_NEW_BARK_TOWN, FALSE, PALETTE_AUTO, FISHGROUP_POND

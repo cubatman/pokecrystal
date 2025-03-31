@@ -3,7 +3,8 @@ SECTION "Map Scripts T", ROMX
 INCLUDE "maps/RangerFacility.asm"
 INCLUDE "maps/LittleWater.asm"
 INCLUDE "maps/LittleWaterPath.asm"
-; INCLUDE "maps/LittleWaterField.asm"
+INCLUDE "maps/LittleWaterHollow.asm"
+INCLUDE "maps/LittleWaterField.asm"
 
 
 SECTION "Map Scripts 1", ROMX
@@ -379,8 +380,8 @@ INCLUDE "maps/CherrygrovePokecenter1F.asm"
 INCLUDE "maps/CherrygroveGymSpeechHouse.asm"
 INCLUDE "maps/GuideGentsHouse.asm"
 INCLUDE "maps/CherrygroveEvolutionSpeechHouse.asm"
-INCLUDE "maps/Route30BerryHouse.asm"
-INCLUDE "maps/MrPokemonsHouse.asm"
+; INCLUDE "maps/Route30BerryHouse.asm"
+; INCLUDE "maps/MrPokemonsHouse.asm"
 INCLUDE "maps/Route31VioletGate.asm"
 
 
@@ -419,7 +420,7 @@ SECTION "Map Scripts 21", ROMX
 INCLUDE "maps/CianwoodCity.asm"
 INCLUDE "maps/Route27.asm"
 INCLUDE "maps/Route29.asm"
-INCLUDE "maps/Route30.asm"
+; INCLUDE "maps/Route30.asm"
 INCLUDE "maps/Route38.asm"
 INCLUDE "maps/Route13.asm"
 INCLUDE "maps/PewterNidoranSpeechHouse.asm"

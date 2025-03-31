@@ -124,8 +124,8 @@ BetaSproutTower6_Blocks: ; unreferenced
 BetaPokecenter_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaPokecenter.blk"
 
-Route30_Blocks:
-	INCBIN "maps/Route30.blk"
+; Route30_Blocks:
+;	INCBIN "maps/Route30.blk"
 
 Route26_Blocks:
 	INCBIN "maps/Route26.blk"
@@ -197,8 +197,8 @@ Route5CleanseTagHouse_Blocks:
 CherrygroveGymSpeechHouse_Blocks:
 GuideGentsHouse_Blocks:
 CherrygroveEvolutionSpeechHouse_Blocks:
-Route30BerryHouse_Blocks:
-	INCBIN "maps/House1.blk"
+; Route30BerryHouse_Blocks:
+;	INCBIN "maps/House1.blk"
 
 SafariZoneFuchsiaGateBeta_Blocks:
 Route19FuchsiaGate_Blocks:
@@ -937,8 +937,8 @@ MountMoon_Blocks:
 SeafoamGym_Blocks:
 	INCBIN "maps/SeafoamGym.blk"
 
-MrPokemonsHouse_Blocks:
-	INCBIN "maps/MrPokemonsHouse.blk"
+; MrPokemonsHouse_Blocks:
+;	INCBIN "maps/MrPokemonsHouse.blk"
 
 VictoryRoadGate_Blocks:
 	INCBIN "maps/VictoryRoadGate.blk"
@@ -1052,10 +1052,13 @@ RangerFacility_Blocks:
 LittleWater_Blocks:
 	INCBIN "maps/LittleWater.blk"
 
-; LittleWaterField_Blocks:
-;	INCBIN "maps/LittleWaterField.blk"
+LittleWaterField_Blocks:
+	INCBIN "maps/LittleWaterField.blk"
 
 LittleWaterPath_Blocks:
 	INCBIN "maps/LittleWaterPath.blk"
+
+LittleWaterHollow_Blocks:
+	INCBIN "maps/LittleWaterHollow.blk"
 
 ENDSECTION

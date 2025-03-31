@@ -488,7 +488,7 @@ ENDM
 	endgroup
 
 	newgroup CHERRYGROVE                                          ; 26
-	map_const ROUTE_30,                                    10, 27 ;  1
+;	map_const ROUTE_30,                                    10, 27 ;  1
 	map_const ROUTE_31,                                    20,  9 ;  2
 	map_const CHERRYGROVE_CITY,                            20,  9 ;  3
 	map_const CHERRYGROVE_MART,                             6,  4 ;  4
@@ -496,8 +496,8 @@ ENDM
 	map_const CHERRYGROVE_GYM_SPEECH_HOUSE,                 4,  4 ;  6
 	map_const GUIDE_GENTS_HOUSE,                            4,  4 ;  7
 	map_const CHERRYGROVE_EVOLUTION_SPEECH_HOUSE,           4,  4 ;  8
-	map_const ROUTE_30_BERRY_HOUSE,                         4,  4 ;  9
-	map_const MR_POKEMONS_HOUSE,                            4,  4 ; 10
+;	map_const ROUTE_30_BERRY_HOUSE,                         4,  4 ;  9
+;	map_const MR_POKEMONS_HOUSE,                            4,  4 ; 10
 	map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 11
 	endgroup
 
@@ -508,7 +508,9 @@ ENDM
 	newgroup HOOTHOOTHOLLOW                                        ; 28	
 	map_const LITTLE_WATER,                                  24, 12 ; 1
 	map_const LITTLE_WATER_PATH,                             16, 12 ; 2
-	map_const LITTLE_WATER_FIELD,                            16,  4 ; 3
+	map_const LITTLE_WATER_HOLLOW,							 18, 12 ; 3
+	map_const LITTLE_WATER_FIELD,                            16,  4 ; 4
+;	map_const LITTLE_WATER_FIELD_SOUTH,                            16,  4 ; 5
 	endgroup											
 
 DEF NUM_MAP_GROUPS EQU const_value ; 28

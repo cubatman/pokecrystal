@@ -2,6 +2,9 @@ SECTION "Map Scripts T", ROMX
 
 INCLUDE "maps/RangerFacility.asm"
 INCLUDE "maps/LittleWater.asm"
+INCLUDE "maps/LittleWaterPath.asm"
+; INCLUDE "maps/LittleWaterField.asm"
+
 
 SECTION "Map Scripts 1", ROMX
 

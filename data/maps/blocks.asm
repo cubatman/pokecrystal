@@ -1052,4 +1052,10 @@ RangerFacility_Blocks:
 LittleWater_Blocks:
 	INCBIN "maps/LittleWater.blk"
 
+; LittleWaterField_Blocks:
+;	INCBIN "maps/LittleWaterField.blk"
+
+LittleWaterPath_Blocks:
+	INCBIN "maps/LittleWaterPath.blk"
+
 ENDSECTION

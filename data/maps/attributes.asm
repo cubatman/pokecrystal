@@ -96,9 +96,19 @@ MACRO connection
 	endc
 ENDM
 
-	map_attributes LittleWater, LITTLE_WATER, $05, 0
+	map_attributes LittleWater, LITTLE_WATER, $05, WEST
+	connection west, LittleWaterPath, LITTLE_WATER_PATH, 0
+
+	map_attributes LittleWaterPath, LITTLE_WATER_PATH, $05, EAST ; | EAST
+	; connection south, LittleWaterField, LITTLE_WATER_FIELD, 0
+	connection east, LittleWater, LITTLE_WATER, 0
+
+	; map_attributes LittleWaterField, LITTLE_WATER_FIELD, $05, NORTH
+	; connection north, LittleWaterPath, LITTLE_WATER_PATH, 0
 
 	map_attributes RangerFacility, RANGER_FACILITY, $00, 0
+
+	; old map attributes
 
 	map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	connection west, Route29, ROUTE_29, 0

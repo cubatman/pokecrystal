@@ -507,6 +507,8 @@ ENDM
 
 	newgroup HOOTHOOTHOLLOW                                        ; 28	
 	map_const LITTLE_WATER,                                  24, 12 ; 1
+	map_const LITTLE_WATER_PATH,                             16, 12 ; 2
+	map_const LITTLE_WATER_FIELD,                            16,  4 ; 3
 	endgroup											
 
 DEF NUM_MAP_GROUPS EQU const_value ; 28

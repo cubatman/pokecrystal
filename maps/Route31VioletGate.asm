@@ -31,8 +31,8 @@ Route31VioletGate_MapEvents:
 	def_warp_events
 	warp_event  0,  4, VIOLET_CITY, 8
 	warp_event  0,  5, VIOLET_CITY, 9
-	warp_event  9,  4, ROUTE_31, 1
-	warp_event  9,  5, ROUTE_31, 2
+;	warp_event  9,  4, ROUTE_31, 1
+;	warp_event  9,  5, ROUTE_31, 2
 
 	def_coord_events
 

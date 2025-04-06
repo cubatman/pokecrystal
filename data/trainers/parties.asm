@@ -414,6 +414,17 @@ YoungsterGroup:
 	db 37, RATICATE,   HYPER_BEAM, QUICK_ATTACK, HYPER_FANG, PURSUIT
 	db -1 ; end
 
+    ; YOUNGSTER (15) Polo
+	db "POLO@", TRAINERTYPE_NORMAL
+	db 4, WEEDLE
+	db 5, SENTRET
+	db -1 ; end
+
+	; YOUNGSTER (16) Adrian
+	db "Adrian@", TRAINERTYPE_NORMAL
+	db 4, PSYDUCK
+	db -1 ; end
+
 SchoolboyGroup:
 	; SCHOOLBOY (1)
 	db "JACK@", TRAINERTYPE_NORMAL
@@ -1521,11 +1532,14 @@ BugCatcherGroup:
 	db  2, CATERPIE
 	db -1 ; end
 
-	; BUG_CATCHER (5)
+	; BUG_CATCHER (5) (I am using this one)
 	db "BENNY@", TRAINERTYPE_NORMAL
-	db  7, WEEDLE
-	db  9, KAKUNA
-	db 12, BEEDRILL
+	db  2, CATERPIE
+	db  2, WEEDLE
+	db  3, LEDYBA
+	db  3, SPINARAK
+	db  5, METAPOD
+	db  5, KAKUNA
 	db -1 ; end
 
 	; BUG_CATCHER (6)

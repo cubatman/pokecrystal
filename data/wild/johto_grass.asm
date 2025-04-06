@@ -150,4 +150,41 @@ JohtoGrassWildMons:
 	db 5, ODDISH	; 1% |
 	end_grass_wildmons
 
+	def_grass_wildmons LITTLE_WATER_MAIN
+	db 5 percent, 5 percent, 1 percent ; encounter rates: morn/day/nite
+	; morn
+	db 2, PIDGEY	; 25% 
+	db 2, RATTATA	; 25% 
+	db 2, PIDGEY	; 15% 
+	db 3, PIDGEY	; 10% 
+	db 2, PIDGEY	; 10%
+	db 2, RATTATA	; 5% 
+	db 2, SNUBBULL	; 4%
+	db 2, PIDGEY	; 3% 
+	db 2, PIDGEY	; 2% 
+	db 3, SNUBBULL  ; 1% 
+	; day
+	db 2, PIDGEY	; 25% 
+	db 2, RATTATA	; 25% 
+	db 2, PIDGEY	; 15% 
+	db 3, PIDGEY	; 10% 
+	db 2, PIDGEY	; 10%
+	db 2, RATTATA	; 5% 
+	db 2, SNUBBULL	; 4%
+	db 2, PIDGEY	; 3% 
+	db 2, PIDGEY	; 2%
+	db 3, SNUBBULL  ; 1% 
+	; night
+	db 6, HOOTHOOT	; 25%
+	db 5, HOOTHOOT	; 25% 
+	db 7, HOOTHOOT	; 15%
+	db 7, HOOTHOOT	; 10%
+	db 3, HOOTHOOT	; 10%
+	db 3, HOOTHOOT	; 5% 
+	db 5, MEOWTH	; 4%
+	db 7, HOOTHOOT	; 3%
+	db 13, HOOTHOOT ; 2%
+	db 5, MEOWTH	; 1% 
+	end_grass_wildmons
+
 	db -1 ; end ; this stays at the end

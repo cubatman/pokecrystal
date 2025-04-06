@@ -102,14 +102,14 @@
 	RGB 31,26,00, 31,15,00 ; morn/day
 	RGB 13,13,01, 08,08,01 ; nite
 
-; group 26 (Cherrygrove)
-	RGB 31,14,28, 31,05,21 ; morn/day
-	RGB 14,07,17, 13,00,08 ; nite
+;; group 26 (Cherrygrove)
+;	RGB 31,14,28, 31,05,21 ; morn/day
+;	RGB 14,07,17, 13,00,08 ; nite
 
 ; group 27 (RANGER_FACILITY)
 	RGB 31,14,28, 31,05,21 ; morn/day
 	RGB 14,07,17, 13,00,08 ; nite
 
-; group 28 (HOOTHOOTHOLLOW)
+; group 28 (LITTLE_WATER)
 	RGB 20,31,14, 11,23,05 ; morn/day
 	RGB 09,13,08, 06,09,04 ; nite

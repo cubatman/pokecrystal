@@ -194,11 +194,7 @@ DayOfWeekSiblingsHouse_Blocks:
 Route27SandstormHouse_Blocks:
 MrPsychicsHouse_Blocks:
 Route5CleanseTagHouse_Blocks:
-CherrygroveGymSpeechHouse_Blocks:
 GuideGentsHouse_Blocks:
-CherrygroveEvolutionSpeechHouse_Blocks:
-; Route30BerryHouse_Blocks:
-;	INCBIN "maps/House1.blk"
 
 SafariZoneFuchsiaGateBeta_Blocks:
 Route19FuchsiaGate_Blocks:
@@ -216,9 +212,6 @@ Route5SaffronGate_Blocks:
 
 BetaEcruteakCity_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaEcruteakCity.blk"
-
-BetaCherrygroveCity_Blocks: ; unreferenced
-	INCBIN "maps/unused/BetaCherrygroveCity.blk"
 
 CinnabarIsland_Blocks:
 	INCBIN "maps/CinnabarIsland.blk"
@@ -250,8 +243,8 @@ Route17_Blocks:
 BetaMahoganyTown_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaMahoganyTown.blk"
 
-Route31_Blocks:
-	INCBIN "maps/Route31.blk"
+;Route31_Blocks:
+;	INCBIN "maps/Route31.blk"
 
 Route27_Blocks:
 	INCBIN "maps/Route27.blk"
@@ -331,8 +324,6 @@ FuchsiaMart_Blocks:
 LavenderMart_Blocks:
 ViridianMart_Blocks:
 SaffronMart_Blocks:
-CherrygroveMart_Blocks:
-	INCBIN "maps/Mart.blk"
 
 Route10North_Blocks:
 	INCBIN "maps/Route10North.blk"
@@ -360,8 +351,6 @@ CeladonPokecenter1F_Blocks:
 CianwoodPokecenter1F_Blocks:
 ViridianPokecenter1F_Blocks:
 SaffronPokecenter1F_Blocks:
-CherrygrovePokecenter1F_Blocks:
-	INCBIN "maps/Pokecenter1F.blk"
 
 BetaPewterMuseumOfScience1F_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaPewterMuseumOfScience1F.blk"
@@ -525,9 +514,6 @@ RadioTower5F_Blocks:
 
 NewBarkTown_Blocks:
 	INCBIN "maps/NewBarkTown.blk"
-
-CherrygroveCity_Blocks:
-	INCBIN "maps/CherrygroveCity.blk"
 
 VioletCity_Blocks:
 	INCBIN "maps/VioletCity.blk"
@@ -1060,5 +1046,11 @@ LittleWaterPath_Blocks:
 
 LittleWaterHollow_Blocks:
 	INCBIN "maps/LittleWaterHollow.blk"
+
+LittleWaterMain_Blocks:
+	INCBIN "maps/LittleWaterMain.blk"
+	
+StartHouse_Blocks:
+	INCBIN "maps/LittleWaterStartHouse.blk"
 
 ENDSECTION

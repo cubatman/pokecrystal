@@ -195,7 +195,7 @@ TrainerYoungsterMikey:
 	end
 
 TrainerBugCatcherDon:
-	trainer BUG_CATCHER, DON, EVENT_BEAT_BUG_CATCHER_DON, BugCatcherDonSeenText, BugCatcherDonBeatenText, 0, .Script
+	trainer BUG_CATCHER, DON, EVENT_BEAT_YOUNGSTER_SCOTT, BugCatcherDonSeenText, BugCatcherDonBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled

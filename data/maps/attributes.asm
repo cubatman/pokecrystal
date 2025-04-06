@@ -96,9 +96,10 @@ MACRO connection
 	endc
 ENDM
 
-	map_attributes LittleWater, LITTLE_WATER, $05, SOUTH | WEST
+	map_attributes LittleWater, LITTLE_WATER, $05, SOUTH | WEST | EAST
 	connection south, LittleWaterHollow, LITTLE_WATER_HOLLOW, 4
 	connection west, LittleWaterPath, LITTLE_WATER_PATH, 0
+	connection east, LittleWaterMain, LITTLE_WATER_MAIN, 3
 
 	map_attributes LittleWaterPath, LITTLE_WATER_PATH, $05, EAST | SOUTH
 	connection south, LittleWaterField, LITTLE_WATER_FIELD, 0
@@ -106,17 +107,14 @@ ENDM
 
 	map_attributes LittleWaterHollow, LITTLE_WATER_HOLLOW, $05, NORTH
 	connection north, LittleWater, LITTLE_WATER, -4
-;	connection west, LittleWaterFieldSouth, LITTLE_WATER_FIELD_SOUTH, 4
 
 	map_attributes LittleWaterField, LITTLE_WATER_FIELD, $05, NORTH
 	connection north, LittleWaterPath, LITTLE_WATER_PATH, 0
-;	connection south, LittleWaterFieldSouth, LITTLE_WATER_FIELD_SOUTH, 0
-;	connection east, LittleWaterHollow, LITTLE_WATER_HOLLOW, 0
 
-;	map_attributes LittleWaterFieldSouth, LITTLE_WATER_FIELD_SOUTH, $05, NORTH | east
-;	connection north, LittleWaterField, LITTLE_WATER_FIELD, 0
-;	connection east, LittleWaterHollow, LITTLE_WATER_HOLLOW, -4
+	map_attributes LittleWaterMain, LITTLE_WATER_MAIN, $05, WEST
+	connection west, LittleWater, LITTLE_WATER, -3
 
+	map_attributes StartHouse, START_HOUSE, $00, 0
 	map_attributes RangerFacility, RANGER_FACILITY, $00, 0
 
 	; old map attributes
@@ -125,14 +123,10 @@ ENDM
 	connection west, Route29, ROUTE_29, 0
 	connection east, Route27, ROUTE_27, 0
 
-	map_attributes CherrygroveCity, CHERRYGROVE_CITY, $35,  EAST
-;	connection north, Route30, ROUTE_30, 5
-	connection east, Route29, ROUTE_29, 0
-
-	map_attributes VioletCity, VIOLET_CITY, $05, SOUTH | WEST | EAST
+	map_attributes VioletCity, VIOLET_CITY, $05, SOUTH | WEST
 	connection south, Route32, ROUTE_32, 0
 	connection west, Route36, ROUTE_36, 0
-	connection east, Route31, ROUTE_31, 9
+;	connection east, Route31, ROUTE_31, 9
 
 	map_attributes AzaleaTown, AZALEA_TOWN, $05, WEST | EAST
 	connection west, Route34, ROUTE_34, -18
@@ -179,18 +173,10 @@ ENDM
 	map_attributes Route28, ROUTE_28, $2c, WEST
 	connection west, SilverCaveOutside, SILVER_CAVE_OUTSIDE, -9
 
-	map_attributes Route29, ROUTE_29, $05, NORTH | WEST | EAST
+	map_attributes Route29, ROUTE_29, $05, NORTH | EAST
 	connection north, Route46, ROUTE_46, 10
-	connection west, CherrygroveCity, CHERRYGROVE_CITY, 0
+;	connection west, CherrygroveCity, CHERRYGROVE_CITY, 0
 	connection east, NewBarkTown, NEW_BARK_TOWN, 0
-
-;	map_attributes Route30, ROUTE_30, $05, NORTH | SOUTH
-;	connection north, Route31, ROUTE_31, -10
-;	connection south, CherrygroveCity, CHERRYGROVE_CITY, -5
-
-	map_attributes Route31, ROUTE_31, $05, WEST
-;	connection south, Route30, ROUTE_30, 10
-	connection west, VioletCity, VIOLET_CITY, -9
 
 	map_attributes Route32, ROUTE_32, $05, NORTH | SOUTH
 	connection north, VioletCity, VIOLET_CITY, 0
@@ -711,11 +697,3 @@ ENDM
 	map_attributes Route5UndergroundPathEntrance, ROUTE_5_UNDERGROUND_PATH_ENTRANCE, $00, 0
 	map_attributes Route5SaffronGate, ROUTE_5_SAFFRON_GATE, $00, 0
 	map_attributes Route5CleanseTagHouse, ROUTE_5_CLEANSE_TAG_HOUSE, $00, 0
-	map_attributes CherrygroveMart, CHERRYGROVE_MART, $00, 0
-	map_attributes CherrygrovePokecenter1F, CHERRYGROVE_POKECENTER_1F, $00, 0
-	map_attributes CherrygroveGymSpeechHouse, CHERRYGROVE_GYM_SPEECH_HOUSE, $00, 0
-	map_attributes GuideGentsHouse, GUIDE_GENTS_HOUSE, $00, 0
-	map_attributes CherrygroveEvolutionSpeechHouse, CHERRYGROVE_EVOLUTION_SPEECH_HOUSE, $00, 0
-;	map_attributes Route30BerryHouse, ROUTE_30_BERRY_HOUSE, $00, 0
-;	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
-	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0

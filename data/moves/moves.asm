@@ -24,9 +24,9 @@ Moves:
 	move ICE_PUNCH,    EFFECT_FREEZE_HIT,         75, ICE,          100, 15,  10
 	move THUNDERPUNCH, EFFECT_PARALYZE_HIT,       75, ELECTRIC,     100, 15,  10
 	move SCRATCH,      EFFECT_NORMAL_HIT,         40, NORMAL,       100, 35,   0
-	move VICEGRIP,     EFFECT_NORMAL_HIT,         55, STEEL,        100, 30,   0
+	move VICEGRIP,     EFFECT_NORMAL_HIT,         55, STEEL,        100, 30,   0 ; made steel
 	move GUILLOTINE,   EFFECT_NORMAL_HIT,        100, STEEL,         70, 10,   0 ; made steel, High crit, 100 BP, 70 accuracy
-	move RAZOR_WIND,   EFFECT_NORMAL_HIT,         80, FLYING,        75, 10,   0 ; made flying, 1 turn
+	move RAZOR_WIND,   EFFECT_NORMAL_HIT,         80, FLYING,       100, 10,   0 ; made flying, 1 turn
 	move SWORDS_DANCE, EFFECT_ATTACK_UP_2,         0, NORMAL,       100, 30,   0
 	move CUT,          EFFECT_NORMAL_HIT,         65, BUG,          100, 20,   0
 	move GUST,         EFFECT_GUST,               40, FLYING,       100, 35,   0
@@ -79,7 +79,7 @@ Moves:
 	move HYPER_BEAM,   EFFECT_HYPER_BEAM,        150, NORMAL,        90,  5,   0
 	move PECK,         EFFECT_NORMAL_HIT,         35, FLYING,       100, 35,   0
 	move DRILL_PECK,   EFFECT_NORMAL_HIT,         80, FLYING,       100, 20,   0
-	move SUBMISSION,   EFFECT_RECOIL_HIT,         80, FIGHTING,      80, 25,   0
+	move SUBMISSION,   EFFECT_RECOIL_HIT,         80, FIGHTING,     100, 25,   0 ; made 100% accurate
 	move LOW_KICK,     EFFECT_FLINCH_HIT,         50, FIGHTING,      90, 20,  30
 	move COUNTER,      EFFECT_COUNTER,             1, FIGHTING,     100, 20,   0
 	move SEISMIC_TOSS, EFFECT_LEVEL_DAMAGE,        1, FIGHTING,     100, 20,   0
@@ -95,7 +95,7 @@ Moves:
 	move SLEEP_POWDER, EFFECT_SLEEP,               0, GRASS,         75, 15,   0
 	move PETAL_DANCE,  EFFECT_RAMPAGE,            70, GRASS,        100, 20,   0
 	move STRING_SHOT,  EFFECT_SPEED_DOWN,          0, BUG,           95, 40,   0
-	move DRAGON_RAGE,  EFFECT_SP_ATK_UP_HIT,      40, DRAGON,       100, 15,   0 ; made 40BP "Rage" move
+	move DRAGON_RAGE,  EFFECT_SP_ATK_UP_HIT,      55, DRAGON,       100, 15,   0 ; made 55BP "Rage" move
 	move FIRE_SPIN,    EFFECT_TRAP_TARGET,        15, FIRE,          70, 15,   0
 	move THUNDERSHOCK, EFFECT_PARALYZE_HIT,       40, ELECTRIC,     100, 30,  10
 	move THUNDERBOLT,  EFFECT_PARALYZE_HIT,       95, ELECTRIC,     100, 15,  10
@@ -103,7 +103,7 @@ Moves:
 	move THUNDER,      EFFECT_THUNDER,           120, ELECTRIC,      70, 10,  30
 	move ROCK_THROW,   EFFECT_NORMAL_HIT,         50, ROCK,          90, 15,   0
 	move EARTHQUAKE,   EFFECT_EARTHQUAKE,        100, GROUND,       100, 10,   0
-	move FISSURE,      EFFECT_OHKO,                1, GROUND,        30,  5,   0
+	move FISSURE,      EFFECT_OHKO,                1, GROUND,        30,  5,   0 ; TODO: REPLACE
 	move DIG,          EFFECT_FLY,                80, GROUND,       100, 10,   0 ; made 80Bp
 	move TOXIC,        EFFECT_TOXIC,               0, POISON,        85, 10,   0
 	move CONFUSION,    EFFECT_CONFUSE_HIT,        50, PSYCHIC_TYPE, 100, 25,  10
@@ -130,11 +130,11 @@ Moves:
 	move HAZE,         EFFECT_RESET_STATS,         0, ICE,          100, 30,   0
 	move REFLECT,      EFFECT_REFLECT,             0, PSYCHIC_TYPE, 100, 20,   0
 	move FOCUS_ENERGY, EFFECT_FOCUS_ENERGY,        0, NORMAL,       100, 30,   0
-	move BIDE,         EFFECT_BIDE,                0, NORMAL,       100, 10,   0 ; TODO: REPLACE with BULLDOZE (ground, 60bp, lowers speed)
+	move BIDE,         EFFECT_BIDE,                0, NORMAL,       100, 10,   0 ; TODO: REPLACE with BULLDOZE (ground, 60bp, lowers speed) or MUD_BOMB
 	move METRONOME,    EFFECT_METRONOME,           0, NORMAL,       100, 10,   0
 	move MIRROR_MOVE,  EFFECT_MIRROR_MOVE,         0, FLYING,       100, 20,   0
 	move SELFDESTRUCT, EFFECT_SELFDESTRUCT,      200, NORMAL,       100,  5,   0
-	move EGG_BOMB,     EFFECT_NORMAL_HIT,        100, NORMAL,        75, 10,   0
+	move EGG_BOMB,     EFFECT_NORMAL_HIT,        100, NORMAL,        90, 10,   0
 	move LICK,         EFFECT_PARALYZE_HIT,       20, GHOST,        100, 30,  30
 	move SMOG,         EFFECT_POISON_HIT,         20, POISON,        85, 20,  40
 	move SLUDGE,       EFFECT_POISON_HIT,         65, POISON,       100, 20,  30
@@ -182,8 +182,8 @@ Moves:
 	move SKETCH,       EFFECT_SKETCH,              0, NORMAL,       100,  1,   0
 	move TRIPLE_KICK,  EFFECT_TRIPLE_KICK,        10, FIGHTING,      90, 10,   0
 	move THIEF,        EFFECT_THIEF,              40, DARK,         100, 10, 100
-	move SPIDER_WEB,   EFFECT_MEAN_LOOK,           0, BUG,          100, 10,   0
-	move MIND_READER,  EFFECT_LOCK_ON,             0, NORMAL,       100,  5,   0
+	move SPIDER_WEB,   EFFECT_MEAN_LOOK,           0, BUG,          100, 10,   0 ; maybe REPLACE (WITH HEAD_SMASH)
+	move MIND_READER,  EFFECT_LOCK_ON,             0, NORMAL,       100,  5,   0 ; REPLACE with HEX (just use LOCK_ON instead)
 	move NIGHTMARE,    EFFECT_NIGHTMARE,           0, GHOST,        100, 15,   0
 	move FLAME_WHEEL,  EFFECT_FLAME_WHEEL,        60, FIRE,         100, 25,  10
 	move SNORE,        EFFECT_SNORE,              40, NORMAL,       100, 15,  30
@@ -211,7 +211,7 @@ Moves:
 	move PERISH_SONG,  EFFECT_PERISH_SONG,         0, NORMAL,       100,  5,   0
 	move ICY_WIND,     EFFECT_SPEED_DOWN_HIT,     55, ICE,           95, 15, 100
 	move DETECT,       EFFECT_PROTECT,             0, FIGHTING,     100,  5,   0 ; TODO: REPLACE with POISON_JAB
-	move BONE_RUSH,    EFFECT_MULTI_HIT,          25, GROUND,        80, 10,   0 ; TODO: REPLACE
+	move BONE_RUSH,    EFFECT_MULTI_HIT,          25, GROUND,        80, 10,   0 ; TODO: REPLACE (with SHADOW_BONE?)
 	move LOCK_ON,      EFFECT_LOCK_ON,             0, NORMAL,       100,  5,   0
 	move OUTRAGE,      EFFECT_RAMPAGE,            90, DRAGON,       100, 15,   0
 	move SANDSTORM,    EFFECT_SANDSTORM,           0, ROCK,         100, 10,   0
@@ -264,5 +264,5 @@ Moves:
 	move FUTURE_SIGHT, EFFECT_FUTURE_SIGHT,       80, PSYCHIC_TYPE,  90, 15,   0
 	move ROCK_SMASH,   EFFECT_DEFENSE_DOWN_HIT,   65, FIGHTING,     100, 20,  50
 	move WHIRLPOOL,    EFFECT_TRAP_TARGET,        15, WATER,         70, 15,   0
-	move BEAT_UP,      EFFECT_BEAT_UP,            10, DARK,         100, 10,   0 ; Maybe replace
+	move BEAT_UP,      EFFECT_BEAT_UP,            10, DARK,         100, 10,   0 ; Maybe replace (with ROCK_TOMB)
 	assert_table_length NUM_ATTACKS

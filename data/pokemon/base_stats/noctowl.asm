@@ -1,9 +1,9 @@
 	db NOCTOWL ; 164
 
-	db 100,  50,  50,  70,  76,  96
+	db 100,  63,  50,  70,  82,  95
 	;   hp  atk  def  spd  sat  sdf
 
-	db NORMAL, FLYING ; type
+	db GHOST, FLYING ; type
 	db 90 ; catch rate
 	db 162 ; base exp
 	db NO_ITEM, NO_ITEM ; items

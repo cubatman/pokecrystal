@@ -268,16 +268,16 @@ Move00Description:
 	db "?@"
 
 PoundDescription:
-	db   "Pounds with fore-"
-	next "legs or tail.@"
+	db   "A ferocious snarl"
+	next "lowers SP ATT.@"
 
 KarateChopDescription:
 	db   "Has a high criti-"
 	next "cal hit ratio.@"
 
 DoubleslapDescription:
-	db   "Repeatedly slaps"
-	next "2-5 times.@"
+	db   "Spooks the target"
+	next "and may flinch.@"
 
 CometPunchDescription:
 	db   "Repeatedly punches"
@@ -312,8 +312,8 @@ VicegripDescription:
 	next "ful pincers.@"
 
 GuillotineDescription:
-	db   "A one-hit KO,"
-	next "pincer attack.@"
+	db   "A powerful attack!"
+	next "CRITS easily.@"
 
 RazorWindDescription:
 	db   "1st turn: Prepare"
@@ -324,8 +324,8 @@ SwordsDanceDescription:
 	next "creases ATTACK.@"
 
 CutDescription:
-	db   "Cuts using claws,"
-	next "scythes, etc.@"
+	db   "A cutting attack"
+	next "that CRITS easily.@"
 
 GustDescription:
 	db   "Whips up a strong"
@@ -344,8 +344,8 @@ FlyDescription:
 	next "2nd turn: Attack@"
 
 BindDescription:
-	db   "Binds the target"
-	next "for 2-5 turns.@"
+	db   "An attack that may"
+	next "raise all stats.@"
 
 SlamDescription:
 	db   "Slams the foe with"
@@ -592,8 +592,8 @@ StringShotDescription:
 	next "the foe's SPEED.@"
 
 DragonRageDescription:
-	db   "Always inflicts"
-	next "40HP damage.@"
+	db   "User lashes out."
+	next "May raise SP ATK.@"
 
 FireSpinDescription:
 	db   "Traps foe in fire"
@@ -660,8 +660,8 @@ QuickAttackDescription:
 	next "in the first hit.@"
 
 RageDescription:
-	db   "Raises ATTACK if"
-	next "the user is hit.@"
+	db   "User lashes out."
+	next "May raise ATTACK.@"
 
 TeleportDescription:
 	db   "A move for fleeing"
@@ -793,15 +793,15 @@ SpikeCannonDescription:
 
 ConstrictDescription:
 	db   "An attack that may"
-	next "lower SPEED.@"
+	next "raise all stats.@"
 
 AmnesiaDescription:
 	db   "Sharply raises the"
 	next "user's SPCL.DEF.@"
 
 KinesisDescription:
-	db   "Reduces the foe's"
-	next "accuracy.@"
+	db   "Sharply raises"
+	next "user's SP ATT.@"
 
 SoftboiledDescription:
 	db   "Restores HP by 1/2"
@@ -824,8 +824,8 @@ PoisonGasDescription:
 	next "poison the foe.@"
 
 BarrageDescription:
-	db   "Throws orbs to hit"
-	next "2-5 times.@"
+	db   "Attack relentlessly"
+	next "Hits 2-5 times.@"
 
 LeechLifeDescription:
 	db   "Steals 1/2 of the"
@@ -880,8 +880,8 @@ ExplosionDescription:
 	next "makes user faint.@"
 
 FurySwipesDescription:
-	db   "Quickly scratches"
-	next "2-5 times.@"
+	db   "A strange beam,"
+	next "may confuse.@"
 
 BonemerangDescription:
 	db   "An attack that"
@@ -1024,8 +1024,8 @@ MudSlapDescription:
 	next "accuracy.@"
 
 OctazookaDescription:
-	db   "An attack that may"
-	next "reduce accuracy.@"
+	db   "An attack that"
+	next "may CONFUSE.@"
 
 SpikesDescription:
 	db   "Hurts foes when"

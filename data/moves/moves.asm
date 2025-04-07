@@ -45,7 +45,7 @@ Moves:
 	move HEADBUTT,     EFFECT_FLINCH_HIT,         65, NORMAL,       100, 20,  30
 	move HORN_ATTACK,  EFFECT_NORMAL_HIT,         65, NORMAL,       100, 25,   0
 	move FURY_ATTACK,  EFFECT_MULTI_HIT,          18, NORMAL,        85, 20,   0 
-	move HORN_DRILL,   EFFECT_NORMAL_HIT,         20, GROUND,        30,  5,   0 ; MADE GROUND TYPE ATTACK (WAS OHKO)
+	move HORN_DRILL,   EFFECT_NORMAL_HIT,         20, GROUND,        30,  5,   0 ; MADE GROUND TYPE ATTACK (WAS OHKO) ;;; MAYBE REPLACE (SAND_TOMB)
 	move TACKLE,       EFFECT_NORMAL_HIT,         40, NORMAL,       100, 35,   0 
 	move BODY_SLAM,    EFFECT_PARALYZE_HIT,       85, NORMAL,       100, 15,  30
 	move WRAP,         EFFECT_TRAP_TARGET,        15, NORMAL,        85, 20,   0
@@ -104,7 +104,7 @@ Moves:
 	move ROCK_THROW,   EFFECT_NORMAL_HIT,         50, ROCK,          90, 15,   0
 	move EARTHQUAKE,   EFFECT_EARTHQUAKE,        100, GROUND,       100, 10,   0
 	move FISSURE,      EFFECT_OHKO,                1, GROUND,        30,  5,   0
-	move DIG,          EFFECT_FLY,                60, GROUND,       100, 10,   0
+	move DIG,          EFFECT_FLY,                80, GROUND,       100, 10,   0 ; made 80Bp
 	move TOXIC,        EFFECT_TOXIC,               0, POISON,        85, 10,   0
 	move CONFUSION,    EFFECT_CONFUSE_HIT,        50, PSYCHIC_TYPE, 100, 25,  10
 	move PSYCHIC_M,    EFFECT_SP_DEF_DOWN_HIT,    90, PSYCHIC_TYPE, 100, 10,  10
@@ -130,7 +130,7 @@ Moves:
 	move HAZE,         EFFECT_RESET_STATS,         0, ICE,          100, 30,   0
 	move REFLECT,      EFFECT_REFLECT,             0, PSYCHIC_TYPE, 100, 20,   0
 	move FOCUS_ENERGY, EFFECT_FOCUS_ENERGY,        0, NORMAL,       100, 30,   0
-	move BIDE,         EFFECT_BIDE,                0, NORMAL,       100, 10,   0
+	move BIDE,         EFFECT_BIDE,                0, NORMAL,       100, 10,   0 ; TODO: REPLACE with BULLDOZE (ground, 60bp, lowers speed)
 	move METRONOME,    EFFECT_METRONOME,           0, NORMAL,       100, 10,   0
 	move MIRROR_MOVE,  EFFECT_MIRROR_MOVE,         0, FLYING,       100, 20,   0
 	move SELFDESTRUCT, EFFECT_SELFDESTRUCT,      200, NORMAL,       100,  5,   0
@@ -210,8 +210,8 @@ Moves:
 	move DESTINY_BOND, EFFECT_DESTINY_BOND,        0, GHOST,        100,  5,   0
 	move PERISH_SONG,  EFFECT_PERISH_SONG,         0, NORMAL,       100,  5,   0
 	move ICY_WIND,     EFFECT_SPEED_DOWN_HIT,     55, ICE,           95, 15, 100
-	move DETECT,       EFFECT_PROTECT,             0, FIGHTING,     100,  5,   0 ; TODO: REPLACE
-	move BONE_RUSH,    EFFECT_MULTI_HIT,          25, GROUND,        80, 10,   0
+	move DETECT,       EFFECT_PROTECT,             0, FIGHTING,     100,  5,   0 ; TODO: REPLACE with POISON_JAB
+	move BONE_RUSH,    EFFECT_MULTI_HIT,          25, GROUND,        80, 10,   0 ; TODO: REPLACE
 	move LOCK_ON,      EFFECT_LOCK_ON,             0, NORMAL,       100,  5,   0
 	move OUTRAGE,      EFFECT_RAMPAGE,            90, DRAGON,       100, 15,   0
 	move SANDSTORM,    EFFECT_SANDSTORM,           0, ROCK,         100, 10,   0
@@ -231,7 +231,7 @@ Moves:
 	move HEAL_BELL,    EFFECT_HEAL_BELL,           0, NORMAL,       100,  5,   0
 	move RETURN,       EFFECT_RETURN,              1, NORMAL,       100, 20,   0
 	move PRESENT,      EFFECT_PRESENT,             1, ICE,           90, 15,   0 ; adjusted probability, made ICE Type
-	move FRUSTRATION,  EFFECT_FRUSTRATION,         1, NORMAL,       100, 20,   0
+	move FRUSTRATION,  EFFECT_FRUSTRATION,         1, NORMAL,       100, 20,   0 ; maybe REPLACE
 	move SAFEGUARD,    EFFECT_SAFEGUARD,           0, NORMAL,       100, 25,   0
 	move PAIN_SPLIT,   EFFECT_PAIN_SPLIT,          0, NORMAL,       100, 20,   0
 	move SACRED_FIRE,  EFFECT_SACRED_FIRE,       100, FIRE,          95,  5,  50

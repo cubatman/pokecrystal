@@ -26,7 +26,7 @@ Moves:
 	move SCRATCH,      EFFECT_NORMAL_HIT,         40, NORMAL,       100, 35,   0
 	move VICEGRIP,     EFFECT_NORMAL_HIT,         55, STEEL,        100, 30,   0 ; made steel
 	move GUILLOTINE,   EFFECT_NORMAL_HIT,        100, STEEL,         70, 10,   0 ; made steel, High crit, 100 BP, 70 accuracy
-	move RAZOR_WIND,   EFFECT_NORMAL_HIT,         80, FLYING,       100, 10,   0 ; made flying, 1 turn
+	move RAZOR_WIND,   EFFECT_NORMAL_HIT,         80, FLYING,       100, 10,   0 ; made flying, 1 turn... maybe make flying type future sight
 	move SWORDS_DANCE, EFFECT_ATTACK_UP_2,         0, NORMAL,       100, 30,   0
 	move CUT,          EFFECT_NORMAL_HIT,         65, BUG,          100, 20,   0
 	move GUST,         EFFECT_GUST,               40, FLYING,       100, 35,   0

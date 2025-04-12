@@ -2,6 +2,9 @@
     const GROUNDGYM_DOUGAN
     const GROUNDGYM_BOULDER1
     const GROUNDGYM_ROCK1
+    const GROUNDGYM_ANNOUNCER
+    const GROUNDGYM_HIKER1
+    const GROUNDGYM_HIKER2
 
 GroundGymF1_MapScripts:
     def_scene_scripts
@@ -27,7 +30,95 @@ GroundGymF1_MapEvents:
     object_event 11, 5, SPRITE_BROCK, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 2, GroundGymBattle, -1
 	object_event 10, 8, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GroundGymBoulder, -1
     object_event 10, 7, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GroundGymRock, -1
+    object_event 18, 6, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GroundGymAnnouncer, -1
+    object_event 18, 14, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0 , -1, -1, 0, OBJECTTYPE_TRAINER, 1, GroundGymArnie, -1
+    object_event 10, 13, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, -0, OBJECTTYPE_TRAINER, 2, GroundGymPhillip, -1 
 
+GroundGymPhillip:
+    trainer HIKER, PHILLIP, EVENT_BEAT_HIKER_PHILLIP, GroundGymNPCHiker2Text, GroundGymNPCHiker2BeatText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext GroundGymNPCHiker2AfterText
+	waitbutton
+	closetext
+	end
+
+GroundGymNPCHiker2Text:
+    text "With GROUND types"
+    line "I'll soar to new"
+    line "heights!"
+    done
+
+GroundGymNPCHiker2BeatText:
+    text "I think I've only"
+    line "dug myself deeper."
+    done
+
+GroundGymNPCHiker2AfterText:
+    text "I think I've only"
+    line "dug myself deeper."
+    done
+
+GroundGymArnie:
+    trainer HIKER, RUSSELL, EVENT_BEAT_HIKER_RUSSELL, GroundGymNPCHiker1Text, GroundGymNPCHiker1BeatText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext GroundGymNPCHiker1AfterText
+	waitbutton
+	closetext
+	end
+
+GroundGymNPCHiker1Text:
+    text "Ground type #MON"
+    line "are the BEST!"
+    done
+
+GroundGymNPCHiker1BeatText:
+    text "You still have nothing"
+    line "on LEADER DOUGAN"
+    done
+
+GroundGymNPCHiker1AfterText:
+    text "You still have nothing"
+    line "on LEADER DOUGAN"
+    done
+
+GroundGymAnnouncer:
+    faceplayer
+    opentext 
+    checkevent EVENT_BEAT_BROCK
+    iftrue GroundGymAnnouncerAltText
+    writetext GroundGymAnnouncerText
+    waitbutton
+    closetext
+    end
+
+GroundGymAnnouncerAltText:
+    text "CONGRADULATIONS!"
+    line "You have proven your-"
+    cont "self a master of"
+    cont "THE DEPTHS!"
+    done
+
+GroundGymAnnouncerText:
+    text "Welcome to THE DEPTHS!"
+
+    para "This is the gym of"
+    line "The MASTER OF EARTH,"
+    cont "DOUGAN!!"
+
+    para "Prepare yourself to"
+    line "take on the GROUND"
+    cont "type #MON"
+    cont "specialist!"
+
+    para "Take the ladder into"
+    line "The depths to begin!"
+    done
 
 GroundGymBattle:
 	faceplayer

@@ -12,7 +12,7 @@ Trainers:
 
 ChuckGroup: 
 	; Dougan of the Depths (1)
-	db "Chuck@", TRAINERTYPE_ITEM_MOVES
+	db "DOUGAN@", TRAINERTYPE_ITEM_MOVES
 	db 15, SANDSHREW, NO_ITEM, DEFENSE_CURL, SPIKES, TACKLE, NO_MOVE
 	db 16, SENTRET, NO_ITEM,  HEADBUTT, DEFENSE_CURL, MUD_SLAP, NO_MOVE
 	db 18, QUAGSIRE, BERRY,  MUD_SLAP, SLAM, AMNESIA, TAIL_WHIP
@@ -2283,24 +2283,23 @@ GuitaristGroup:
 	db -1 ; end
 
 HikerGroup:
-	; HIKER (1)
-	db "ANTHONY@", TRAINERTYPE_NORMAL
-	db 16, GEODUDE
-	db 18, MACHAMP
+	; HIKER (1) ; (wa ANTHONY), Hiker Brant LittleWater Gym Route
+	db "BRANT@", TRAINERTYPE_NORMAL
+	db 12, MANKEY
+	db 12, SPEAROW
+	db 14, GEODUDE
 	db -1 ; end
 
-	; HIKER (2)
-	db "RUSSELL@", TRAINERTYPE_NORMAL
-	db  4, GEODUDE
-	db  6, GEODUDE
+	; HIKER (2) ; was RUSSEL, Hiker Arnie Ground Gym
+	db "Arnie@", TRAINERTYPE_NORMAL
 	db  8, GEODUDE
+	db  11, SANDSHREW
+	db  13, PHANPY
 	db -1 ; end
 
-	; HIKER (3)
+	; HIKER (3) ; now in Ground Gym
 	db "PHILLIP@", TRAINERTYPE_NORMAL
-	db 23, GEODUDE
-	db 23, GEODUDE
-	db 23, GRAVELER
+	db 15, GLIGAR
 	db -1 ; end
 
 	; HIKER (4)
@@ -2624,8 +2623,9 @@ BlackbeltGroup:
 	db -1 ; end
 
 	; BLACKBELT_T (2)
-	db "YOSHI@", TRAINERTYPE_MOVES
-	db 27, HITMONLEE,  DOUBLE_KICK, MEDITATE, JUMP_KICK, FOCUS_ENERGY
+	db "YOSHI@", TRAINERTYPE_NORMAL
+	db 12, GEODUDE
+	db 13, MACHOP
 	db -1 ; end
 
 	; BLACKBELT_T (3)
@@ -3403,9 +3403,10 @@ TwinsGroup:
 	db -1 ; end
 
 PokefanFGroup:
-	; POKEFANF (1)
-	db "BEVERLY@", TRAINERTYPE_ITEM
-	db 14, SNUBBULL,   BERRY
+	; POKEFANF (1) ; (was BEVERLY) Elise, LittleWaterGym route
+	db "Elise@", TRAINERTYPE_ITEM
+	db 13, PIDGEY, NO_ITEM
+	db 14, TEDDIURSA,   BERRY
 	db -1 ; end
 
 	; POKEFANF (2)

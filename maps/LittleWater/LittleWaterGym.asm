@@ -1,4 +1,5 @@
     object_const_def
+    const PASS_BLOCKING_NPC
 
 LittleWaterGym_MapScripts:
     def_scene_scripts

@@ -1,4 +1,7 @@
     object_const_def
+    const GROUNDGYM_DOUGAN
+    const GROUNDGYM_BOULDER1
+    const GROUNDGYM_ROCK1
 
 GroundGymF1_MapScripts:
     def_scene_scripts
@@ -20,8 +23,11 @@ GroundGymF1_MapEvents:
 
     def_bg_events
 
-    def_object_events
+    def_object_events ; IMPORTANT NOTE: Keep in order, and add object_const_def entries to top of script!!!
     object_event 11, 5, SPRITE_BROCK, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 2, GroundGymBattle, -1
+	object_event 10, 8, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GroundGymBoulder, -1
+    object_event 10, 7, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GroundGymRock, -1
+
 
 GroundGymBattle:
 	faceplayer
@@ -31,7 +37,9 @@ GroundGymBattle:
 	writetext DouganIntroText1
 	waitbutton
     closetext
+    playsound SFX_STRENGTH
     earthquake 80
+    opentext
     writetext DouganIntroText2
 	closetext
 	winlosstext DouganLossText, 0
@@ -60,6 +68,10 @@ GroundGymBattle:
 	setevent EVENT_GOT_TM31_MUD_SLAP
 	writetext DouganExplainTMText
 	waitbutton
+    playsound SFX_STRENGTH
+    earthquake 80
+    disappear GROUNDGYM_BOULDER1
+    disappear GROUNDGYM_ROCK1
 	closetext
 	end
 
@@ -145,8 +157,7 @@ DouganIntroText1:
     para "You face now"
     line "DOUGAN OF"
     cont "THE DEPTHS!"
-    cont "MASTER OF"
-    cont "EARTH!"
+    cont "MASTER OF EARTH"
     done
 
 DouganIntroText2:

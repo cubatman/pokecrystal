@@ -21,7 +21,7 @@ GroundGymF1_MapEvents:
     def_bg_events
 
     def_object_events
-    object_event 11, 7, SPRITE_BROCK, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 2, GroundGymBattle, -1
+    object_event 11, 5, SPRITE_BROCK, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 2, GroundGymBattle, -1
 
 GroundGymBattle:
 	faceplayer
@@ -107,7 +107,7 @@ DouganAfterText:
     
     para "You have a grand"
     line "adventure before"
-    cont "you.
+    cont "you."
     cont "I know you can"
     cont "rise to great"
     cont "heights!"

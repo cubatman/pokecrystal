@@ -513,8 +513,8 @@ ENDM
 	map_const LITTLE_WATER_MAIN,                             8,  12 ; 5
 	map_const START_HOUSE,                                   6,   4 ; 6
 	map_const LITTLE_WATER_GYM,                              18, 12 ; 7
-;	map_const GROUND_GYM_F1,								 11,  9 ; 8
-;	map_const GROUND_GYM_B1,                                 11,  9 ; 10
+	map_const GROUND_GYM_F1,								 11,  9 ; 8
+	map_const GROUND_GYM_B1,                                 11,  9 ; 10
 	endgroup											
 
 DEF NUM_MAP_GROUPS EQU const_value ; 28

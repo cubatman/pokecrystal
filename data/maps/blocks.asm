@@ -1056,4 +1056,10 @@ StartHouse_Blocks:
 LittleWaterGym_Blocks:
 	INCBIN "maps/LittleWater/LittleWaterGym.blk"
 
+GroundGymF1_Blocks:
+	INCBIN "maps/LittleWater/GroundGymF1.blk"
+
+GroundGymB1_Blocks:
+	INCBIN "maps/LittleWater/GroundGymB1.blk"
+
 ENDSECTION

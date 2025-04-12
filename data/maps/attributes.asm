@@ -101,7 +101,8 @@ ENDM
 	connection west, LittleWaterPath, LITTLE_WATER_PATH, 0
 	connection east, LittleWaterMain, LITTLE_WATER_MAIN, 3
 
-	map_attributes LittleWaterPath, LITTLE_WATER_PATH, $05, EAST | SOUTH
+	map_attributes LittleWaterPath, LITTLE_WATER_PATH, $05, NORTH | SOUTH | EAST
+	connection north, LittleWaterGym, LITTLE_WATER_GYM, 2
 	connection south, LittleWaterField, LITTLE_WATER_FIELD, 0
 	connection east, LittleWater, LITTLE_WATER, 0
 
@@ -113,6 +114,9 @@ ENDM
 
 	map_attributes LittleWaterMain, LITTLE_WATER_MAIN, $05, WEST
 	connection west, LittleWater, LITTLE_WATER, -3
+
+	map_attributes LittleWaterGym, LITTLE_WATER_GYM, $05, SOUTH
+	connection south, LittleWaterPath, LITTLE_WATER_PATH, -2
 
 	map_attributes StartHouse, START_HOUSE, $00, 0
 	map_attributes RangerFacility, RANGER_FACILITY, $00, 0

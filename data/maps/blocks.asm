@@ -1036,21 +1036,24 @@ RangerFacility_Blocks:
 	INCBIN "maps/RangerFacility.blk"
 
 LittleWater_Blocks:
-	INCBIN "maps/LittleWater.blk"
+	INCBIN "maps/LittleWater/LittleWater.blk"
 
 LittleWaterField_Blocks:
-	INCBIN "maps/LittleWaterField.blk"
+	INCBIN "maps/LittleWater/LittleWaterField.blk"
 
 LittleWaterPath_Blocks:
-	INCBIN "maps/LittleWaterPath.blk"
+	INCBIN "maps/LittleWater/LittleWaterPath.blk"
 
 LittleWaterHollow_Blocks:
-	INCBIN "maps/LittleWaterHollow.blk"
+	INCBIN "maps/LittleWater/LittleWaterHollow.blk"
 
 LittleWaterMain_Blocks:
-	INCBIN "maps/LittleWaterMain.blk"
+	INCBIN "maps/LittleWater/LittleWaterMain.blk"
 	
 StartHouse_Blocks:
-	INCBIN "maps/LittleWaterStartHouse.blk"
+	INCBIN "maps/LittleWater/LittleWaterStartHouse.blk"
+
+LittleWaterGym_Blocks:
+	INCBIN "maps/LittleWater/LittleWaterGym.blk"
 
 ENDSECTION

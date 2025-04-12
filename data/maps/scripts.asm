@@ -1,12 +1,13 @@
 SECTION "Map Scripts T", ROMX
 
 INCLUDE "maps/RangerFacility.asm"
-INCLUDE "maps/LittleWater.asm"
-INCLUDE "maps/LittleWaterPath.asm"
-INCLUDE "maps/LittleWaterHollow.asm"
-INCLUDE "maps/LittleWaterField.asm"
-INCLUDE "maps/LittleWaterMain.asm"
-INCLUDE "maps/LittleWaterStartHouse.asm"
+INCLUDE "maps/LittleWater/LittleWater.asm"
+INCLUDE "maps/LittleWater/LittleWaterPath.asm"
+INCLUDE "maps/LittleWater/LittleWaterHollow.asm"
+INCLUDE "maps/LittleWater/LittleWaterField.asm"
+INCLUDE "maps/LittleWater/LittleWaterMain.asm"
+INCLUDE "maps/LittleWater/LittleWaterStartHouse.asm"
+INCLUDE "maps/LittleWater/LittleWaterGym.asm"
 
 
 SECTION "Map Scripts 1", ROMX

@@ -1,15 +1,15 @@
     object_const_def
 
-LittleWaterField_MapScripts:
+LittleWaterGym_MapScripts:
     def_scene_scripts
     
     def_callbacks
 
-LittleWaterField_MapEvents:
+LittleWaterGym_MapEvents:
     db 0, 0 ; filler
 
     def_warp_events
-    warp_event 6, 15, GROUND_GYM_F1, 1
+ ;   warp_event 6, 15, GROUND_GYM_F1, 1
 
     def_coord_events
 

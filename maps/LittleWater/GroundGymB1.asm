@@ -1,11 +1,11 @@
     object_const_def
 
-LittleWaterField_MapScripts:
+GroundGymB1_MapScripts:
     def_scene_scripts
     
     def_callbacks
 
-LittleWaterField_MapEvents:
+GroundGymB1_MapEvents:
     db 0, 0 ; filler
 
     def_warp_events

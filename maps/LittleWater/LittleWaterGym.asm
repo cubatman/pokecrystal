@@ -17,11 +17,25 @@ LittleWaterGym_MapEvents:
     def_coord_events
 
     def_bg_events
+    bg_event 6, 22, BGEVENT_READ, GroundGymSign
 
     def_object_events
 	object_event  26, 12, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBlackbeltYoshi1, -1
     object_event  22, 16, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerElise1, -1
     object_event  15, 17, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WALK_UP_DOWN, 3, 3, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerBrant, -1
+
+GroundGymSign:
+    jumptext .GroundGymSignRead
+.GroundGymSignRead:
+    text "Approach"
+    line "THE DEPTHS!"
+    
+    para "Face LEADER"
+    line "DOUGAN, the "
+    cont "Ground Type Gym"
+    cont "Leader just ahead!" 
+    done
+
 
 TrainerBrant:
     trainer HIKER, ANTHONY1, EVENT_BEAT_HIKER_ANTHONY, BrantSeentText, BrantBeatText, 0, .Script

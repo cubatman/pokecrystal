@@ -10,6 +10,7 @@ LittleWaterMain_MapEvents:
 
     def_warp_events
     warp_event 12, 7, START_HOUSE, 1
+    warp_event 3, 9, LITTLE_WATER_CENTER, 1
 
     def_coord_events
 

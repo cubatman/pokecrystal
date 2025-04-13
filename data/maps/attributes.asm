@@ -122,6 +122,7 @@ ENDM
 	map_attributes RangerFacility, RANGER_FACILITY, $00, 0
 	map_attributes GroundGymF1, GROUND_GYM_F1, $00, 0
 	map_attributes GroundGymB1, GROUND_GYM_B1, $00, 0
+	map_attributes LittleWaterCenter, LITTLE_WATER_CENTER, $00, 0
 
 	; old map attributes
 

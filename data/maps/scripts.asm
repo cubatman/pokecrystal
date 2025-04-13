@@ -10,6 +10,7 @@ INCLUDE "maps/LittleWater/LittleWaterStartHouse.asm"
 INCLUDE "maps/LittleWater/LittleWaterGym.asm"
 INCLUDE "maps/LittleWater/GroundGymF1.asm"
 INCLUDE "maps/LittleWater/GroundGymB1.asm"
+INCLUDE "maps/LittleWater/LittleWaterCenter.asm"
 
 
 SECTION "Map Scripts 1", ROMX

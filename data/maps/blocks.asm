@@ -1062,4 +1062,7 @@ GroundGymF1_Blocks:
 GroundGymB1_Blocks:
 	INCBIN "maps/LittleWater/GroundGymB1.blk"
 
+LittleWaterCenter_Blocks:
+	INCBIN "maps/Pokecenter1F.blk"
+
 ENDSECTION

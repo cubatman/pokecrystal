@@ -342,16 +342,18 @@ YoungsterGroup:
 	db  4, RATTATA
 	db -1 ; end
 
-	; YOUNGSTER (2)
+	; YOUNGSTER (2) ; used in Ground Gym
 	db "MIKEY@", TRAINERTYPE_NORMAL
-	db  2, PIDGEY
-	db  4, RATTATA
+	db  8, SANDSHREW
+	db  10, SANDSHREW
+	db  12, RATTATA
 	db -1 ; end
 
-	; YOUNGSTER (3)
+	; YOUNGSTER (3) ; in ground gym
 	db "ALBERT@", TRAINERTYPE_NORMAL
 	db  6, RATTATA
 	db  8, ZUBAT
+	db 11, DIGLETT
 	db -1 ; end
 
 	; YOUNGSTER (4)
@@ -944,12 +946,10 @@ CooltrainerMGroup:
 	db -1 ; end
 
 CooltrainerFGroup:
-	; COOLTRAINERF (1)
+	; COOLTRAINERF (1) ; in ground gym b1
 	db "GWEN@", TRAINERTYPE_NORMAL
-	db 26, EEVEE
-	db 22, FLAREON
-	db 22, VAPOREON
-	db 22, JOLTEON
+	db 14, WOOPER
+	db 15, RHYHORN
 	db -1 ; end
 
 	; COOLTRAINERF (2)
@@ -2302,23 +2302,24 @@ HikerGroup:
 	db 15, GLIGAR
 	db -1 ; end
 
-	; HIKER (4)
+	; HIKER (4) ; Now in ground gym
 	db "LEONARD@", TRAINERTYPE_NORMAL
-	db 23, GEODUDE
-	db 25, MACHOP
+	db 14, DIGLETT
+	db 14, SANDSHREW
 	db -1 ; end
 
-	; HIKER (5)
-	db "ANTHONY@", TRAINERTYPE_NORMAL
-	db 11, GEODUDE
-	db 11, MACHOP
+	; HIKER (5) ; now in ground gym, was ANTHONY2
+	db "JOSEPH@", TRAINERTYPE_NORMAL
+	db 11, DIGLETT
+	db 13, MACHOP
+	db 14, ONIX
 	db -1 ; end
 
-	; HIKER (6)
+	; HIKER (6) 
 	db "BENJAMIN@", TRAINERTYPE_NORMAL
 	db 14, DIGLETT
 	db 14, GEODUDE
-	db 16, DUGTRIO
+	db 16, DIGLETT
 	db -1 ; end
 
 	; HIKER (7)
@@ -2516,11 +2517,11 @@ BurglarGroup:
 	db -1 ; end
 
 FirebreatherGroup:
-	; FIREBREATHER (1)
+	; FIREBREATHER (1) ; in ground gym
 	db "OTIS@", TRAINERTYPE_NORMAL
-	db 29, MAGMAR
-	db 32, WEEZING
-	db 29, MAGMAR
+	db 13, CUBONE
+	db 13, KOFFING
+	db 15, MAGBY
 	db -1 ; end
 
 	; FIREBREATHER (2)
@@ -2614,15 +2615,14 @@ JugglerGroup:
 	db -1 ; end
 
 BlackbeltGroup:
-	; BLACKBELT_T (1)
+	; BLACKBELT_T (1) ; in ground gym b1
 	db "KENJI@", TRAINERTYPE_NORMAL
-	db 27, ONIX
-	db 30, HITMONLEE
-	db 27, ONIX
-	db 32, MACHOKE
+	db 13, TYROGUE
+	db 13, CUBONE
+	db 13, CUBONE
 	db -1 ; end
 
-	; BLACKBELT_T (2)
+	; BLACKBELT_T (2) ; in use
 	db "YOSHI@", TRAINERTYPE_NORMAL
 	db 12, GEODUDE
 	db 13, MACHOP

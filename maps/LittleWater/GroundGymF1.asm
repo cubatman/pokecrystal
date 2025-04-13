@@ -5,6 +5,8 @@
     const GROUNDGYM_ANNOUNCER
     const GROUNDGYM_HIKER1
     const GROUNDGYM_HIKER2
+    const GROUNDGYM_YOUNGSTER1
+    const GROUNDGYM_LOSTNPC
 
 GroundGymF1_MapScripts:
     def_scene_scripts
@@ -31,8 +33,62 @@ GroundGymF1_MapEvents:
 	object_event 10, 8, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GroundGymBoulder, -1
     object_event 10, 7, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GroundGymRock, -1
     object_event 18, 6, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GroundGymAnnouncer, -1
-    object_event 18, 14, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0 , -1, -1, 0, OBJECTTYPE_TRAINER, 1, GroundGymArnie, -1
-    object_event 10, 13, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, -0, OBJECTTYPE_TRAINER, 2, GroundGymPhillip, -1 
+    object_event 18, 14, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0 , -1, -1, PAL_NPC_PINK, OBJECTTYPE_TRAINER, 1, GroundGymArnie, -1
+    object_event 10, 13, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, GroundGymPhillip, -1 
+    object_event 7, 15, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, GroundGymMikey, -1 
+    object_event 2, 10, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, GroundGymLostNPC, -1
+
+GroundGymLostNPC:
+    faceplayer
+    opentext
+    writetext GroundGymLostNPCText
+    waitbutton
+    closetext
+    end
+
+GroundGymLostNPCText:
+    text "HELP!!"
+
+    para "I've been wandering"
+    line "around down here"
+    cont "for hours!"
+
+    para "I don't think I'll"
+    line "ever find the GYM"
+    cont "LEADER...."
+
+    para "I DON'T THINK I'LL"
+    line "EVER GET"
+    cont "OUT OF HERE!"
+    done
+
+GroundGymMikey:
+    trainer YOUNGSTER, MIKEY, EVENT_BEAT_YOUNGSTER_MIKEY, GroundGymNPCYoungster1Text, GroundGymNPCYoungster1BeatText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext GroundGymNPCYoungster1AfterText
+	waitbutton
+	closetext
+	end
+
+GroundGymNPCYoungster1Text:
+    text "Are you ready to"
+    line "face a"
+    cont "COOL TRAINER"
+    cont "like ME?"
+    done
+
+GroundGymNPCYoungster1BeatText:
+    text "I guess I'm not as"
+    line "cool as I thought"
+    done
+
+GroundGymNPCYoungster1AfterText:
+    text "I guess I'm not as"
+    line "cool as I thought"
+    done
 
 GroundGymPhillip:
     trainer HIKER, PHILLIP, EVENT_BEAT_HIKER_PHILLIP, GroundGymNPCHiker2Text, GroundGymNPCHiker2BeatText, 0, .Script
@@ -78,46 +134,53 @@ GroundGymNPCHiker1Text:
     done
 
 GroundGymNPCHiker1BeatText:
-    text "You still have nothing"
-    line "on LEADER DOUGAN"
+    text "You still have no-"
+    line "thing on DOUGAN!!"
     done
 
 GroundGymNPCHiker1AfterText:
-    text "You still have nothing"
-    line "on LEADER DOUGAN"
+    text "You still have no-"
+    line "thing on DOUGAN!!"
     done
 
 GroundGymAnnouncer:
     faceplayer
     opentext 
     checkevent EVENT_BEAT_BROCK
-    iftrue GroundGymAnnouncerAltText
+    iftrue .GroundGymAnnouncerAlt
     writetext GroundGymAnnouncerText
     waitbutton
     closetext
     end
 
+.GroundGymAnnouncerAlt:
+    writetext GroundGymAnnouncerAltText
+    waitbutton
+    closetext
+    end
+
 GroundGymAnnouncerAltText:
-    text "CONGRADULATIONS!"
-    line "You have proven your-"
-    cont "self a master of"
-    cont "THE DEPTHS!"
+    text "CONGRATULATIONS!"
+    line "You have proven"
+    cont "yourself a master"
+    cont "of THE DEPTHS!"
     done
 
 GroundGymAnnouncerText:
-    text "Welcome to THE DEPTHS!"
+    text "Welcome to"
+    line "THE DEPTHS!"
 
     para "This is the gym of"
-    line "The MASTER OF EARTH,"
-    cont "DOUGAN!!"
+    line "DOUGAN,"
+    cont "MASTER OF EARTH!!"
 
-    para "Prepare yourself to"
-    line "take on the GROUND"
+    para "Prepare to take"
+    line "on the GROUND"
     cont "type #MON"
     cont "specialist!"
 
-    para "Take the ladder into"
-    line "The depths to begin!"
+    para "Descend the ladder"
+    line "to begin!"
     done
 
 GroundGymBattle:
@@ -159,6 +222,8 @@ GroundGymBattle:
 	setevent EVENT_GOT_TM31_MUD_SLAP
 	writetext DouganExplainTMText
 	waitbutton
+    writetext DouganAfterText
+    waitbutton
     playsound SFX_STRENGTH
     earthquake 80
     disappear GROUNDGYM_BOULDER1

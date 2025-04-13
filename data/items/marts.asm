@@ -41,11 +41,13 @@ Marts:
 
 MartLittleWaterSpecial1: ;before beating gym
 	db 2 ; # items
+	db BERRY
 	db TM_ROAR
 	db -1 ; end
 
 MartLittleWaterSpecial2: ;after beating gym
-	db 3 ; # items
+	db 4 ; # items
+	db BERRY
 	db TM_ROAR
 	db TM_MUD_SLAP
 	db TM_HEADBUTT

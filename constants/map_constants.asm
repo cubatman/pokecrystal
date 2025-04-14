@@ -518,4 +518,12 @@ ENDM
 	map_const LITTLE_WATER_CENTER,							 5,   4 ; 10
 	endgroup											
 
+	; group hoot-hoot-hollow
+	; TestMap (HollowEntrance) 12x18
+	; HiddenPowerClearing 6x6
+	; Hollow2 12x9
+	; Hollow3 12x9
+	; HollowBridge 14x14
+
+
 DEF NUM_MAP_GROUPS EQU const_value ; 28

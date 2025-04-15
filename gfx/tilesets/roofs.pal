@@ -113,3 +113,7 @@
 ; group 28 (LITTLE_WATER)
 	RGB 20,31,14, 11,23,05 ; morn/day
 	RGB 09,13,08, 06,09,04 ; nite
+
+; group 28 (WANDER_FOREST)
+	RGB 20,31,14, 11,23,05 ; morn/day
+	RGB 09,13,08, 06,09,04 ; nite

@@ -109,7 +109,7 @@ Landmarks:
 NewBarkTownName:     db "LITTLE<BSP>WATER@"
 ;CherrygroveCityName: db "CHERRYGROVE<BSP>CITY@"
 VioletCityName:      db "VIOLET CITY@"
-AzaleaTownName:      db "AZALEA TOWN@"
+AzaleaTownName:      db "HOOT HOOT<BSP>HOLLOW@"
 GoldenrodCityName:   db "GOLDENROD<BSP>CITY@"
 EcruteakCityName:    db "ECRUTEAK<BSP>CITY@"
 OlivineCityName:     db "OLIVINE<BSP>CITY@"

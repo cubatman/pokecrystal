@@ -45,6 +45,7 @@ MapGroupPointers::
 ;	dw MapGroup_Cherrygrove ; 26
 	dw MapGroup_RangerFacility ; 27
 	dw MapGroup_LittleWater ; 28
+	dw MapGroup_WanderForest ; 29
 	assert_table_length NUM_MAP_GROUPS
 
 MapGroup_Olivine:
@@ -557,3 +558,7 @@ MapGroup_LittleWater:
 	map GroundGymB1, TILESET_CAVE, INDOOR, LANDMARK_NEW_BARK_TOWN, MUSIC_GYM, FALSE, PALETTE_DAY, FISHGROUP_POND
 	map LittleWaterCenter, TILESET_POKECENTER, INDOOR, LANDMARK_NEW_BARK_TOWN, MUSIC_POKEMON_CENTER, TRUE, PALETTE_DAY, FISHGROUP_NONE
 ;	assert_table_length NUM_LITTLE_WATER_MAPS
+
+MapGroup_WanderForest:
+	table_width MAP_LENGTH
+	map  WanderForest, TILESET_OMANYTE_WORD_ROOM, DUNGEON, LANDMARK_AZALEA_TOWN, MUSIC_ROUTE_29, FALSE, PALETTE_DAY, FISHGROUP_POND

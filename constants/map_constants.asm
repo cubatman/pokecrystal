@@ -525,5 +525,9 @@ ENDM
 	; Hollow3 12x9
 	; HollowBridge 14x14
 
+	newgroup WANDER_FOREST
+	map_const WANDER_FOREST,                               12, 18
+	endgroup
+
 
 DEF NUM_MAP_GROUPS EQU const_value ; 28

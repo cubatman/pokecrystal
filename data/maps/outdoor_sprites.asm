@@ -32,6 +32,7 @@ OutdoorSprites:
 ;	dw CherrygroveGroupSprites
 	dw RangerFacilityGroupSprites
 	dw LittleWaterSprites
+	dw WanderForestSprites
 	assert_table_length NUM_MAP_GROUPS
 
 RangerFacilityGroupSprites:
@@ -60,6 +61,7 @@ PalletGroupSprites:
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 
+WanderForestSprites:
 ViridianGroupSprites:
 	db SPRITE_SUICUNE
 	db SPRITE_SILVER_TROPHY

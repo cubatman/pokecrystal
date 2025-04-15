@@ -1065,4 +1065,7 @@ GroundGymB1_Blocks:
 LittleWaterCenter_Blocks:
 	INCBIN "maps/Pokecenter1F.blk"
 
+WanderForest_Blocks:
+	INCBIN "maps/HootHootHollow/WanderForest.blk"
+
 ENDSECTION

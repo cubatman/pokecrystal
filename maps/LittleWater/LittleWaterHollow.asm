@@ -9,6 +9,8 @@ LittleWaterHollow_MapEvents:
     db 0, 0 ; filler
 
     def_warp_events
+    warp_event 15, 23, WANDER_FOREST, 1
+    warp_event 16, 23, WANDER_FOREST, 1
 
     def_coord_events
 

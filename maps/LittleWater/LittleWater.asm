@@ -24,6 +24,10 @@ LittleWater_MapEvents:
     object_event 30, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, -1, -1, 1, 1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, LWYoungster2, -1
     object_event 40, 22, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, LWHollowWarn, -1
     object_event 13, 20, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, LWBugCatcher, -1
+    object_event 39, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LittleWaterBallCut, EVENT_GIVE_CUT
+
+LittleWaterBallCut:
+    itemball HM_CUT
 
 LWHollowWarn:
     jumptextfaceplayer HootHootHollowAdvisoryTxt

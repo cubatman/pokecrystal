@@ -2686,15 +2686,26 @@ SunfloraEvosAttacks:
 
 YanmaEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
+	db 1, QUICK_ATTACK
 	db 1, FORESIGHT
-	db 7, QUICK_ATTACK
+	db 5, ABSORB
+	db 7, GUST
+	db 8, SAFEGUARD
+	db 10, WING_ATTACK
+	db 12, PIN_MISSILE
 	db 13, DOUBLE_TEAM
+	db 15, SCREECH
+	db 16, AGILITY
+	db 17, CONSTRICT ; SILVER_WIND
 	db 19, SONICBOOM
+	db 21, SUPERSONIC
+	db 23, SLAM
 	db 25, PROTECT
-	db 31, SUPERSONIC
-	db 37, WING_ATTACK
-	db 43, SCREECH
+	db 27, FAINT_ATTACK
+	db 28, BATON_PASS
+	db 30, MEGA_DRAIN
+	db 33, SWORDS_DANCE
+	db 38, RAZOR_WIND
 	db 0 ; no more level-up moves
 
 WooperEvosAttacks:

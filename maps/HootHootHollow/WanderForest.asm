@@ -12,6 +12,7 @@ WanderForest_MapEvents:
     warp_event 11, 3, WANDER_FOREST, 2
     warp_event 12, 3, WANDER_FOREST, 1
     warp_event 20, 0, LITTLE_WATER_HOLLOW, 1
+    warp_event 15, 34, HIDDEN_POWER_CLEARING, 1
 
     def_coord_events
 

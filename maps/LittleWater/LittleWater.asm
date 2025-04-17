@@ -1,15 +1,18 @@
     object_const_def
-    const LWBerryTree1
-    const LWBerryTree2
-    const LWYng1
-    const LWLass1
-    const LWYng2
-    const LWCool1
-    const LWBugCatch1
-    const LWItemBallCut
-    const LWOldRodFisher
-    const LWFisherBrother
-    const LWCoolFactYng
+    const LWBerryTree1      ; 1
+    const LWBerryTree2      ; 2
+    const LWYng1            ; 3
+    const LWLass1           ; 4
+    const LWYng2            ; 5
+    const LWCool1           ; 6
+    const LWBugCatch1       ; 7
+    const LWItemBallCut     ; 8
+    const LWOldRodFisher    ; 9
+    const LWFisherBrother   ; 10
+    const LWCoolFactYng     ; 11
+    const LWYng3            ; 12
+    const LWFisherTrainer   ; 13
+    const LWAntidoteBall    ; 14
 
 LittleWater_MapScripts:
     def_scene_scripts
@@ -20,7 +23,7 @@ LittleWater_MapEvents:
     db 0, 0 ; filler
 
     def_warp_events
-    warp_event  3, 13, RANGER_FACILITY, 1 
+;    warp_event  3, 13, RANGER_FACILITY, 1 
 
     def_coord_events
 
@@ -31,7 +34,7 @@ LittleWater_MapEvents:
 	object_event 31,  7, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Tree_LittleWater1, -1
 	object_event 32,  7, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Tree_LittleWater2, -1
     object_event 32, 15, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, LWYoungster1, -1
-    object_event 36, 8,  SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -2, -2, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LWLassText, -1
+    object_event 36, 8,  SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 2, 2, -2, -2, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LWLassText, -1
     object_event 30, 10, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, -1, -1, 1, 1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, LWYoungster2, -1
     object_event 40, 22, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, LWHollowWarn, -1
     object_event 13, 20, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, LWBugCatcher, -1
@@ -39,6 +42,58 @@ LittleWater_MapEvents:
     object_event 7,  16, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LittleWaterOldRodFisher, -1
     object_event 9,  13, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LittleWaterOldRodFisherBrother, -1
     object_event 19, 19, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, -1, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LittleWaterCoolFactYoungster, -1
+    object_event 32, 17, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, LWYoungster3, -1
+    object_event 18, 15, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, LWFisherBattle, -1
+    object_event 23, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LWAntidote, EVENT_ROUTE_30_ANTIDOTE
+
+LWAntidote:
+    itemball ANTIDOTE
+
+LWFisherBattle:
+    trainer FISHER, JUSTIN,  EVENT_BEAT_FISHER_JUSTIN, LWJustinSeenTxt, LWJustinBeatTxt, 0, .Script
+.Script:
+    endifjustbattled
+    opentext
+    writetext LWJustinBeatTxt
+    waitbutton
+    closetext
+    end
+
+LWJustinSeenTxt:
+    text "I caught a big one"
+    line "the other day!"
+
+    para "Don't believe me?"
+
+    para "Take a look"
+    line "at this!"
+    done
+LWJustinBeatTxt:
+    text "WOAH!"
+    
+    para "I guess you caught"
+    line "some big ones too!"
+    done
+
+LWYoungster3:
+    trainer YOUNGSTER, GORDON,  EVENT_BEAT_YOUNGSTER_GORDON, LWGordonSeenTxt, LWGordonBeatTxt, 0, .Script
+.Script:
+    endifjustbattled
+    opentext
+    writetext LWGordonBeatTxt
+    waitbutton
+    closetext
+    end
+LWGordonSeenTxt:
+    text "I'm starting my"
+    line "journey to be a"
+    cont "#MON master!"
+    done
+LWGordonBeatTxt:
+    text "Aw, man!"
+    line "I still have a"
+    cont "long way to go!"
+    done
 
 LittleWaterCoolFactYoungster:
     jumptextfaceplayer .CoolFact
@@ -165,7 +220,14 @@ LWHollowWarn:
     jumptextfaceplayer HootHootHollowAdvisoryTxt
 
 HootHootHollowAdvisoryTxt:
-    text "I'm just standing here"
+    text "Hey!"
+
+    para "The area down south"
+    line "isn't quite ready."
+    cont "But you can catch"
+    cont "and grind #MON"
+    cont "and can preview"
+    cont "a cool area!"
     done
 
 LWBugCatcher:
@@ -180,7 +242,7 @@ LWBugCatcher:
     end
 
 LWBennySeenTxt:
-    text "I have the most"
+    text "I have the best"
     line "#MON!"
     para "There's no way"
     line "I loose!"
@@ -196,7 +258,8 @@ LWBennyTxt:
     line "NOCTOWL in"
     cont "Hoot-Hoot Hollow."
     cont "I'm trying raise"
-    cont "strong #MON"
+    cont "my #MON"
+    cont "to be stronger"
     cont "so I can explore"
     cont "down there."
     done

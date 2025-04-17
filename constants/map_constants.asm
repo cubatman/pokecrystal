@@ -527,6 +527,7 @@ ENDM
 
 	newgroup WANDER_FOREST
 	map_const WANDER_FOREST,                               12, 18
+	map_const HIDDEN_POWER_CLEARING,						6, 6
 	endgroup
 
 

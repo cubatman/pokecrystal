@@ -356,16 +356,15 @@ YoungsterGroup:
 	db 11, DIGLETT
 	db -1 ; end
 
-	; YOUNGSTER (4)
+	; YOUNGSTER (4) ; used in LittleWater
 	db "GORDON@", TRAINERTYPE_NORMAL
-	db 10, WOOPER
+	db 4, RATTATA
 	db -1 ; end
 
-	; YOUNGSTER (5)
+	; YOUNGSTER (5) ; used in LWPath
 	db "SAMUEL@", TRAINERTYPE_NORMAL
+	db  7, HOPPIP
 	db  7, RATTATA
-	db 10, SANDSHREW
-	db  8, SPEAROW
 	db  8, SPEAROW
 	db -1 ; end
 
@@ -823,11 +822,11 @@ CooltrainerMGroup:
 	db 26, BULBASAUR,  LEECH_SEED, POISONPOWDER, SLEEP_POWDER, RAZOR_LEAF
 	db -1 ; end
 
-	; COOLTRAINERM (2)
-	db "AARON@", TRAINERTYPE_NORMAL
-	db 24, IVYSAUR
-	db 24, CHARMELEON
-	db 24, WARTORTLE
+	; COOLTRAINERM (2) ; miniboss on LWPath
+	db "AARON@", TRAINERTYPE_ITEM_MOVES
+	db 11, EKANS, NO_ITEM, BITE, POISON_STING, WRAP, LEER 
+	db 13, BEEDRILL, NO_ITEM, TWINEEDLE, SPIKES, RAGE, FURY_ATTACK
+	db 15, BULBASAUR, BERRY, VINE_WHIP, SLEEP_POWDER, TACKLE, LEECH_SEED
 	db -1 ; end
 
 	; COOLTRAINERM (3)
@@ -1512,10 +1511,10 @@ BugCatcherGroup:
 	db  3, CATERPIE
 	db -1 ; end
 
-	; BUG_CATCHER (2)
+	; BUG_CATCHER (2) 
 	db "ROB@", TRAINERTYPE_NORMAL
-	db 32, BEEDRILL
-	db 32, BUTTERFREE
+	db 6, VENONAT
+	db 8, VENONAT
 	db -1 ; end
 
 	; BUG_CATCHER (3)
@@ -1535,12 +1534,8 @@ BugCatcherGroup:
 
 	; BUG_CATCHER (5) (I am using this one)
 	db "BENNY@", TRAINERTYPE_NORMAL
-	db  2, CATERPIE
-	db  2, WEEDLE
-	db  3, LEDYBA
-	db  3, SPINARAK
-	db  5, METAPOD
-	db  5, KAKUNA
+	db  4, LEDYBA
+	db  4, SPINARAK
 	db -1 ; end
 
 	; BUG_CATCHER (6)
@@ -1629,12 +1624,10 @@ BugCatcherGroup:
 	db -1 ; end
 
 FisherGroup:
-	; FISHER (1)
+	; FISHER (1) ; used in LittleWater
 	db "JUSTIN@", TRAINERTYPE_NORMAL
 	db  5, MAGIKARP
-	db  5, MAGIKARP
-	db 15, MAGIKARP
-	db  5, MAGIKARP
+	db  5, GOLDEEN
 	db -1 ; end
 
 	; FISHER (2)
@@ -2315,11 +2308,11 @@ HikerGroup:
 	db 14, ONIX
 	db -1 ; end
 
-	; HIKER (6) 
+	; HIKER (6)  ; in LWPath
 	db "BENJAMIN@", TRAINERTYPE_NORMAL
-	db 14, DIGLETT
-	db 14, GEODUDE
-	db 16, DIGLETT
+	db 9, GEODUDE
+	db 8, NIDORAN_F
+	db 8, NIDORAN_M
 	db -1 ; end
 
 	; HIKER (7)
@@ -2930,27 +2923,31 @@ PicnickerGroup:
 	db -1 ; end
 
 CamperGroup:
-	; CAMPER (1)
+	; CAMPER (1) ; used in LWPath
 	db "ROLAND@", TRAINERTYPE_NORMAL
-	db  9, NIDORAN_M
+	db  5, WOOPER
+	db  6, NIDORAN_M
+	db  7, SENTRET
 	db -1 ; end
 
-	; CAMPER (2)
+	; CAMPER (2) 
 	db "TODD@", TRAINERTYPE_NORMAL
-	db 14, PSYDUCK
+	db 7, PSYDUCK
+	db 8, MANKEY
 	db -1 ; end
 
-	; CAMPER (3)
+	; CAMPER (3) ; used in LWPath
 	db "IVAN@", TRAINERTYPE_NORMAL
-	db 10, DIGLETT
-	db 10, ZUBAT
-	db 14, DIGLETT
+	db 7, PSYDUCK
+	db 8, HOOTHOOT
+	db 8, FARFETCH_D
 	db -1 ; end
 
-	; CAMPER (4)
-	db "ELLIOT@", TRAINERTYPE_NORMAL
-	db 13, SANDSHREW
-	db 15, MARILL
+	; CAMPER (4) ; used in LWPath
+	db "ELLIOT@", TRAINERTYPE_MOVES
+	db 7, METAPOD, TACKLE, STRING_SHOT, HARDEN, NO_MOVE
+	db 7, KAKUNA, POISON_STING, STRING_SHOT, HARDEN, NO_MOVE
+	db 7, VENONAT, TACKLE, SUPERSONIC, DISABLE, NO_MOVE 
 	db -1 ; end
 
 	; CAMPER (5)

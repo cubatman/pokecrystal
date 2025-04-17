@@ -97,6 +97,7 @@ MACRO connection
 ENDM
 
 	map_attributes WanderForest, WANDER_FOREST, $0E, 0
+	map_attributes HiddenPowerClearing, HIDDEN_POWER_CLEARING, $0E, 0
 
 	map_attributes LittleWater, LITTLE_WATER, $05, SOUTH | WEST | EAST
 	connection south, LittleWaterHollow, LITTLE_WATER_HOLLOW, 4

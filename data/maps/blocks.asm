@@ -1068,4 +1068,7 @@ LittleWaterCenter_Blocks:
 WanderForest_Blocks:
 	INCBIN "maps/HootHootHollow/WanderForest.blk"
 
+HiddenPowerClearing_Blocks:
+	INCBIN "maps/HootHootHollow/HiddenPowerClearing.blk"
+
 ENDSECTION

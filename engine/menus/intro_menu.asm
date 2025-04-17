@@ -442,9 +442,9 @@ ConfirmContinue:
 	ret
 
 Continue_CheckRTC_RestartClock:
-	call CheckRTCStatus
-	and RTC_RESET
-	jr z, .pass
+;	call CheckRTCStatus
+;	and RTC_RESET
+;	jr z, .pass
 	farcall RestartClock
 	ld a, c
 	and a

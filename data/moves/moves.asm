@@ -25,7 +25,7 @@ Moves:
 	move THUNDERPUNCH, EFFECT_PARALYZE_HIT,       75, ELECTRIC,     100, 15,  10
 	move SCRATCH,      EFFECT_NORMAL_HIT,         40, NORMAL,       100, 35,   0
 	move VICEGRIP,     EFFECT_NORMAL_HIT,         55, STEEL,        100, 30,   0 ; made steel
-	move GUILLOTINE,   EFFECT_NORMAL_HIT,        100, STEEL,         70, 10,   0 ; made steel, High crit, 100 BP, 70 accuracy
+	move GUILLOTINE,   EFFECT_NORMAL_HIT,        110, STEEL,         70, 10,   0 ; made steel, High crit, 100 BP, 70 accuracy
 	move RAZOR_WIND,   EFFECT_NORMAL_HIT,         80, FLYING,       100, 10,   0 ; made flying, 1 turn... maybe make flying type future sight
 	move SWORDS_DANCE, EFFECT_ATTACK_UP_2,         0, NORMAL,       100, 30,   0
 	move CUT,          EFFECT_NORMAL_HIT,         65, BUG,          100, 20,   0
@@ -54,7 +54,7 @@ Moves:
 	move DOUBLE_EDGE,  EFFECT_RECOIL_HIT,        120, NORMAL,       100, 15,   0
 	move TAIL_WHIP,    EFFECT_DEFENSE_DOWN,        0, NORMAL,       100, 30,   0
 	move POISON_STING, EFFECT_POISON_HIT,         15, POISON,       100, 35,  30
-	move TWINEEDLE,    EFFECT_POISON_MULTI_HIT,   30, BUG,          100, 20,  20 ; made 30BP
+	move TWINEEDLE,    EFFECT_POISON_MULTI_HIT,   35, BUG,          100, 20,  20 ; made 30BP
 	move PIN_MISSILE,  EFFECT_MULTI_HIT,          14, BUG,           85, 20,   0
 	move LEER,         EFFECT_DEFENSE_DOWN,        0, NORMAL,       100, 30,   0
 	move BITE,         EFFECT_FLINCH_HIT,         60, DARK,         100, 25,  30

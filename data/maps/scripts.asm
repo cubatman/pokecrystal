@@ -232,6 +232,9 @@ SECTION "Map Scripts 12", ROMX
 INCLUDE "maps/HootHootHollow/WanderForest.asm"
 INCLUDE "maps/HootHootHollow/HiddenPowerClearing.asm"
 INCLUDE "maps/LittleWater/LittleWaterBurnedHouse1.asm"
+INCLUDE "maps/LittleWater/LittleWaterBurnedHouse2.asm"
+INCLUDE "maps/LittleWater/LWCaveUnderBurnedHouses.asm"
+
 
 INCLUDE "maps/OlivinePokecenter1F.asm"
 INCLUDE "maps/OlivineGym.asm"

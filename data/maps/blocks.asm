@@ -1068,6 +1068,12 @@ LittleWaterCenter_Blocks:
 LittleWaterBurnedHouse_Blocks:
 	INCBIN "maps/LittleWater/LittleWaterBurnedHouse1.blk"
 
+LittleWaterBurnedHouse2_Blocks:
+	INCBIN "maps/LittleWater/LittleWaterBurnedHouse2.blk"
+
+LittleWaterUnderBurnedHouses_Blocks:
+	INCBIN "maps/LittleWater/LWCaveUnderBurnedHouses.blk"
+
 WanderForest_Blocks:
 	INCBIN "maps/HootHootHollow/WanderForest.blk"
 

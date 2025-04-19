@@ -517,6 +517,8 @@ ENDM
 	map_const GROUND_GYM_B1,                                 11,  9 ; 9
 	map_const LITTLE_WATER_CENTER,							 5,   4 ; 10
 	map_const LITTLE_WATER_BURNED_HOUSE,					 7,   5 ; 11
+	map_const LITTLE_WATER_BURNED_HOUSE_2,					 7,   5 ; 12
+	map_const LITTLE_WATER_UNDER_BURNED_HOUSES,				 12, 20 ; 13
 	endgroup											
 
 	; group hoot-hoot-hollow

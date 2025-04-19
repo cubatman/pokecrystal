@@ -14,6 +14,8 @@ LittleWaterGym_MapEvents:
     def_warp_events
     warp_event 6, 15, GROUND_GYM_F1, 1
     warp_event 17, 15, LITTLE_WATER_BURNED_HOUSE, 1
+    warp_event 25, 21, LITTLE_WATER_BURNED_HOUSE_2, 1
+    warp_event 10, 5, LITTLE_WATER_UNDER_BURNED_HOUSES, 9
 
     def_coord_events
 

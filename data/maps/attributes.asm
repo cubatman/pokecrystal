@@ -127,6 +127,9 @@ ENDM
 	map_attributes GroundGymB1, GROUND_GYM_B1, $00, 0
 	map_attributes LittleWaterCenter, LITTLE_WATER_CENTER, $00, 0
 	map_attributes LittleWaterBurnedHouse, LITTLE_WATER_BURNED_HOUSE, $00, 0
+	map_attributes LittleWaterBurnedHouse2, LITTLE_WATER_BURNED_HOUSE_2, $00, 0
+	map_attributes LittleWaterUnderBurnedHouses, LITTLE_WATER_UNDER_BURNED_HOUSES, $00, 0
+
 
 	; old map attributes
 

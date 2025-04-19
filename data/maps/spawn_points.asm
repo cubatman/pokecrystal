@@ -13,9 +13,9 @@ SpawnPoints:
 ;	spawn PLAYERS_HOUSE_2F,            3,  3
 	spawn VIRIDIAN_POKECENTER_1F,      5,  3
 
-	spawn PALLET_TOWN,                 5,  6
+	spawn NEW_BARK_TOWN,                 5,  6
 	spawn VIRIDIAN_CITY,              23, 26
-	spawn PEWTER_CITY,                13, 26
+	spawn NEW_BARK_TOWN,              13, 26
 	spawn CERULEAN_CITY,              19, 22
 	spawn ROUTE_10_NORTH,             11,  2
 	spawn VERMILION_CITY,              9,  6
@@ -31,7 +31,7 @@ SpawnPoints:
 	spawn VIOLET_CITY,                31, 26
 	spawn ROUTE_32,                   11, 74
 	spawn AZALEA_TOWN,                15, 10
-	spawn CIANWOOD_CITY,              23, 44
+	spawn NEW_BARK_TOWN,              23, 44
 	spawn GOLDENROD_CITY,             15, 28
 	spawn OLIVINE_CITY,               13, 22
 	spawn ECRUTEAK_CITY,              23, 28

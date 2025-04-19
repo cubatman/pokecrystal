@@ -13,6 +13,7 @@ LittleWaterGym_MapEvents:
 
     def_warp_events
     warp_event 6, 15, GROUND_GYM_F1, 1
+    warp_event 17, 15, LITTLE_WATER_BURNED_HOUSE, 1
 
     def_coord_events
 

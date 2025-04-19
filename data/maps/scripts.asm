@@ -1,6 +1,6 @@
 SECTION "Map Scripts T", ROMX
 
-INCLUDE "maps/RangerFacility.asm"
+; INCLUDE "maps/RangerFacility.asm"
 INCLUDE "maps/LittleWater/LittleWater.asm"
 INCLUDE "maps/LittleWater/LittleWaterPath.asm"
 INCLUDE "maps/LittleWater/LittleWaterHollow.asm"
@@ -11,8 +11,7 @@ INCLUDE "maps/LittleWater/LittleWaterGym.asm"
 INCLUDE "maps/LittleWater/GroundGymF1.asm"
 INCLUDE "maps/LittleWater/GroundGymB1.asm"
 INCLUDE "maps/LittleWater/LittleWaterCenter.asm"
-INCLUDE "maps/HootHootHollow/WanderForest.asm"
-INCLUDE "maps/HootHootHollow/HiddenPowerClearing.asm"
+
 
 SECTION "Map Scripts 1", ROMX
 
@@ -229,6 +228,11 @@ INCLUDE "maps/VictoryRoadGate.asm"
 
 SECTION "Map Scripts 12", ROMX
 
+
+INCLUDE "maps/HootHootHollow/WanderForest.asm"
+INCLUDE "maps/HootHootHollow/HiddenPowerClearing.asm"
+INCLUDE "maps/LittleWater/LittleWaterBurnedHouse1.asm"
+
 INCLUDE "maps/OlivinePokecenter1F.asm"
 INCLUDE "maps/OlivineGym.asm"
 INCLUDE "maps/OlivineTimsHouse.asm"
@@ -240,19 +244,19 @@ INCLUDE "maps/OlivineMart.asm"
 INCLUDE "maps/Route38EcruteakGate.asm"
 INCLUDE "maps/Route39Barn.asm"
 INCLUDE "maps/Route39Farmhouse.asm"
-INCLUDE "maps/ManiasHouse.asm"
-INCLUDE "maps/CianwoodGym.asm"
-INCLUDE "maps/CianwoodPokecenter1F.asm"
-INCLUDE "maps/CianwoodPharmacy.asm"
-INCLUDE "maps/CianwoodPhotoStudio.asm"
-INCLUDE "maps/CianwoodLugiaSpeechHouse.asm"
-INCLUDE "maps/PokeSeersHouse.asm"
-INCLUDE "maps/BattleTower1F.asm"
-INCLUDE "maps/BattleTowerBattleRoom.asm"
-INCLUDE "maps/BattleTowerElevator.asm"
-INCLUDE "maps/BattleTowerHallway.asm"
-INCLUDE "maps/Route40BattleTowerGate.asm"
-INCLUDE "maps/BattleTowerOutside.asm"
+;INCLUDE "maps/ManiasHouse.asm"
+;INCLUDE "maps/CianwoodGym.asm"
+;INCLUDE "maps/CianwoodPokecenter1F.asm"
+;INCLUDE "maps/CianwoodPharmacy.asm"
+;INCLUDE "maps/CianwoodPhotoStudio.asm"
+;INCLUDE "maps/CianwoodLugiaSpeechHouse.asm"
+;INCLUDE "maps/PokeSeersHouse.asm"
+;INCLUDE "maps/BattleTower1F.asm"
+;INCLUDE "maps/BattleTowerBattleRoom.asm"
+;INCLUDE "maps/BattleTowerElevator.asm"
+;INCLUDE "maps/BattleTowerHallway.asm"
+;INCLUDE "maps/Route40BattleTowerGate.asm"
+;INCLUDE "maps/BattleTowerOutside.asm"
 
 
 SECTION "Map Scripts 13", ROMX
@@ -315,7 +319,7 @@ INCLUDE "maps/Route5CleanseTagHouse.asm"
 
 SECTION "Map Scripts 16", ROMX
 
-INCLUDE "maps/PewterCity.asm"
+;INCLUDE "maps/PewterCity.asm"
 INCLUDE "maps/WhirlIslandNW.asm"
 INCLUDE "maps/WhirlIslandNE.asm"
 INCLUDE "maps/WhirlIslandSW.asm"
@@ -405,10 +409,10 @@ INCLUDE "maps/LakeOfRageHiddenPowerHouse.asm"
 INCLUDE "maps/LakeOfRageMagikarpHouse.asm"
 INCLUDE "maps/Route43MahoganyGate.asm"
 INCLUDE "maps/Route43Gate.asm"
-INCLUDE "maps/RedsHouse1F.asm"
-INCLUDE "maps/RedsHouse2F.asm"
-INCLUDE "maps/BluesHouse.asm"
-INCLUDE "maps/OaksLab.asm"
+;INCLUDE "maps/RedsHouse1F.asm"
+;INCLUDE "maps/RedsHouse2F.asm"
+;INCLUDE "maps/BluesHouse.asm"
+;INCLUDE "maps/OaksLab.asm"
 
 
 SECTION "Map Scripts 20", ROMX
@@ -424,18 +428,18 @@ INCLUDE "maps/Route25.asm"
 
 SECTION "Map Scripts 21", ROMX
 
-INCLUDE "maps/CianwoodCity.asm"
+;INCLUDE "maps/CianwoodCity.asm"
 INCLUDE "maps/Route27.asm"
 INCLUDE "maps/Route29.asm"
 ; INCLUDE "maps/Route30.asm"
 INCLUDE "maps/Route38.asm"
 INCLUDE "maps/Route13.asm"
-INCLUDE "maps/PewterNidoranSpeechHouse.asm"
-INCLUDE "maps/PewterGym.asm"
-INCLUDE "maps/PewterMart.asm"
-INCLUDE "maps/PewterPokecenter1F.asm"
-INCLUDE "maps/PewterPokecenter2FBeta.asm"
-INCLUDE "maps/PewterSnoozeSpeechHouse.asm"
+;INCLUDE "maps/PewterNidoranSpeechHouse.asm"
+;INCLUDE "maps/PewterGym.asm"
+;INCLUDE "maps/PewterMart.asm"
+;INCLUDE "maps/PewterPokecenter1F.asm"
+;INCLUDE "maps/PewterPokecenter2FBeta.asm"
+;INCLUDE "maps/PewterSnoozeSpeechHouse.asm"
 
 
 SECTION "Map Scripts 22", ROMX
@@ -446,8 +450,8 @@ INCLUDE "maps/Route26.asm"
 INCLUDE "maps/Route28.asm"
 ;INCLUDE "maps/Route31.asm"
 INCLUDE "maps/Route39.asm"
-INCLUDE "maps/Route40.asm"
-INCLUDE "maps/Route41.asm"
+;INCLUDE "maps/Route40.asm"
+;INCLUDE "maps/Route41.asm"
 INCLUDE "maps/Route12.asm"
 
 
@@ -474,8 +478,8 @@ SECTION "Map Scripts 24", ROMX
 
 INCLUDE "maps/Route33.asm"
 INCLUDE "maps/Route2.asm"
-INCLUDE "maps/Route1.asm"
-INCLUDE "maps/PalletTown.asm"
+;INCLUDE "maps/Route1.asm"
+;INCLUDE "maps/PalletTown.asm"
 INCLUDE "maps/Route21.asm"
 INCLUDE "maps/CinnabarIsland.asm"
 INCLUDE "maps/Route20.asm"
@@ -488,7 +492,7 @@ INCLUDE "maps/LavenderTown.asm"
 INCLUDE "maps/Route6.asm"
 INCLUDE "maps/Route5.asm"
 INCLUDE "maps/Route24.asm"
-INCLUDE "maps/Route3.asm"
+;INCLUDE "maps/Route3.asm"
 INCLUDE "maps/Route4.asm"
 INCLUDE "maps/Route10South.asm"
 INCLUDE "maps/Route23.asm"

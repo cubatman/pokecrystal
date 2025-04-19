@@ -1,11 +1,11 @@
 	object_const_def
 
-LittleWaterBurnedHouse1_MapScripts:
+LittleWaterBurnedHouse_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-LittleWaterBurnedHouse1_MapEvents:
+LittleWaterBurnedHouse_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events

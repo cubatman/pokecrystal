@@ -9,6 +9,6 @@ TreeMonMaps:
 	db -1
 
 RockMonMaps:
-	treemon_map CIANWOOD_CITY,             TREEMON_SET_ROCK
+	treemon_map ROUTE_26,             TREEMON_SET_ROCK
 
 	db -1

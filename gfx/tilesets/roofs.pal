@@ -51,12 +51,12 @@
 	RGB 15,11,01, 11,10,01 ; nite
 
 ; group 13 (Pallet)
-	RGB 27,28,31, 17,19,22 ; morn/day
-	RGB 14,14,18, 10,09,13 ; nite
+;	RGB 27,28,31, 17,19,22 ; morn/day
+;	RGB 14,14,18, 10,09,13 ; nite
 
 ; group 14 (Pewter)
-	RGB 19,19,16, 10,12,15 ; morn/day
-	RGB 09,09,11, 04,05,07 ; nite
+;	RGB 19,19,16, 10,12,15 ; morn/day
+;	RGB 09,09,11, 04,05,07 ; nite
 
 ; group 15 (Mount Moon Square)
 	RGB 14,17,31, 07,11,15 ; morn/day
@@ -87,8 +87,8 @@
 	RGB 12,13,09, 09,12,03 ; nite
 
 ; group 22 (Cianwood)
-	RGB 15,10,31, 07,05,15 ; morn/day
-	RGB 06,05,17, 02,02,08 ; nite
+;	RGB 15,10,31, 07,05,15 ; morn/day
+;	RGB 06,05,17, 02,02,08 ; nite
 
 ; group 23 (Viridian)
 	RGB 21,31,07, 13,25,04 ; morn/day
@@ -107,8 +107,8 @@
 ;	RGB 14,07,17, 13,00,08 ; nite
 
 ; group 27 (RANGER_FACILITY)
-	RGB 31,14,28, 31,05,21 ; morn/day
-	RGB 14,07,17, 13,00,08 ; nite
+;	RGB 31,14,28, 31,05,21 ; morn/day
+;	RGB 14,07,17, 13,00,08 ; nite
 
 ; group 28 (LITTLE_WATER)
 	RGB 20,31,14, 11,23,05 ; morn/day

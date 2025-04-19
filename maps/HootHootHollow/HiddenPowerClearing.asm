@@ -20,27 +20,16 @@ HiddenPowerClearing_MapEvents:
     bg_event 9, 7, BGEVENT_READ, StatueReadEventHiddnePowerClearing
     bg_event 8, 6, BGEVENT_READ, StatueReadEventHiddnePowerClearing
     bg_event 9, 6, BGEVENT_READ, StatueReadEventHiddnePowerClearing
-    bg_event 10, 8, BGEVENT_ITEM, GiveHiddenPower
 
 
     def_object_events
-;    object_event 6, 9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GiveHiddenPower, EVENT_GOT_TM10_HIDDEN_POWER
+    object_event 6, 9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GiveHiddenPower, EVENT_GOT_TM10_HIDDEN_POWER
 
 GiveHiddenPower:
-    hiddenitem TM_HIDDEN_POWER, EVENT_GOT_TM10_HIDDEN_POWER
-
-EnableUnown:
-;    setmapscene RUINS_OF_ALPH_INNER_CHAMBER, SCENE_RUINSOFALPHINNERCHAMBER_STRANGE_PRESENCE
-;    setevent EVENT_MADE_UNOWN_APPEAR_IN_RUINS
-;    clearevent EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_FISHER
-    setflag ENGINE_UNLOCKED_UNOWNS_A_TO_K
-    end
+    itemball TM_HIDDEN_POWER
 
 StatueReadEventHiddnePowerClearing:
-    opentext
-    writetext .StatueReadText
-    closetext
-    sjump EnableUnown
+    jumptext .StatueReadText
 .StatueReadText:
     text "It's a statue of"
     line "a great NOCTOWL"

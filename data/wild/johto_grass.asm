@@ -6,37 +6,37 @@ JohtoGrassWildMons:
 	db 15 percent, 15 percent, 15 percent ; encounter rates: morn/day/nite
 	; morn WEEDLE, MANKEY, HOOTHOOT, NATU, PARAS, BEEDRILL, BELLSPROUT, TANGELA, ELEKID
 	db 7,  UNOWN	      ; 25% | 
-	db 12, MANKEY	      ; 25% | 
-	db 13, HOOTHOOT       ; 15% | 
-	db 12, NATU	          ; 10% |
-	db 14, BELLSPROUT     ; 10% |
+	db 12, UNOWN	      ; 25% | 
+	db 13, UNOWN       ; 15% | 
+	db 12, UNOWN	          ; 10% |
+	db 14, UNOWN     ; 10% |
 	db 11, UNOWN 	      ; 5%  |
-	db 12, BEEDRILL	      ; 4%  |
-	db 16, TANGELA        ; 3%  | 
-	db 13, PARAS          ; 2%  |
-	db 12, STANTLER         ; 1%  |
+	db 12, NATU	      ; 4%  |
+	db 16, HOOTHOOT        ; 3%  | 
+	db 13, HOOTHOOT          ; 2%  |
+	db 12, HOOTHOOT         ; 1%  |
 	; day SENTRET, PIDGEY, CATERPIE / METAPOD, PSYDUCK, YANMA, FARFETCH_D
 	db 7,  UNOWN	      ; 25% | 
-	db 12, MANKEY	      ; 25% | 
-	db 13, NIDORAN_M      ; 15% | 
-	db 12, NATU 	      ; 10% |
-	db 14, BELLSPROUT     ; 10% |
+	db 12, UNOWN	      ; 25% | 
+	db 13, UNOWN      ; 15% | 
+	db 12, UNOWN 	      ; 10% |
+	db 14, UNOWN     ; 10% |
 	db 13, UNOWN	      ; 5%  |
-	db 12, BUTTERFREE     ; 4%  |
-	db 16, TANGELA        ; 3%  | 
-	db 13, GIRAFARIG      ; 2%  |
-	db 16, GIRAFARIG      ; 1%  |
+	db 12, NATU     ; 4%  |
+	db 16, HOOTHOOT        ; 3%  | 
+	db 13, HOOTHOOT      ; 2%  |
+	db 16, HOOTHOOT      ; 1%  |
 	; night WEEDLE / KAKUNA, HOOTHOOT, RATTATA, WOOPER, ODDISH
 	db 7,  UNOWN	      ; 25% | 
-	db 15, HOOTHOOT	      ; 25% | 
-	db 16, PARAS          ; 15% | 
-	db 12, DROWZEE        ; 10% |
-	db 14, ODDISH         ; 10% |
+	db 15, UNOWN	      ; 25% | 
+	db 16, UNOWN          ; 15% | 
+	db 12, UNOWN        ; 10% |
+	db 14, UNOWN         ; 10% |
 	db 11, UNOWN 	      ; 5%  |
-	db 12, BEEDRILL	      ; 4%  |
-	db 16, TEDDIURSA       ; 3%  | 
-	db 13, STANTLER        ; 2%  |
-	db 12, MURKROW        ; 1%  |
+	db 12, NATU	      ; 4%  |
+	db 16, HOOTHOOT       ; 3%  | 
+	db 13, HOOTHOOT        ; 2%  |
+	db 12, HOOTHOOT        ; 1%  |
 	end_grass_wildmons
 
 	def_grass_wildmons WANDER_FOREST

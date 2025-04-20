@@ -2488,11 +2488,10 @@ BlaineGroup:
 	db -1 ; end
 
 BurglarGroup:
-	; BURGLAR (1)
+	; BURGLAR (1) ; Used in LW Gym
 	db "DUNCAN@", TRAINERTYPE_NORMAL
-	db 23, KOFFING
-	db 25, MAGMAR
-	db 23, KOFFING
+	db 14, EKANS
+	db 16, HOUNDOUR
 	db -1 ; end
 
 	; BURGLAR (2)

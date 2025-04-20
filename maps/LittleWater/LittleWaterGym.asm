@@ -2,11 +2,23 @@
     const PASS_BLOCKING_NPC
     const POKEFAN_NPC1
     const HIKER_NPC1
+    const LW_GYM_BURGLAR
 
 LittleWaterGym_MapScripts:
     def_scene_scripts
+    scene_script SceneLWGymNoop, SCENE_LWGYM_NOOP1
+;    scene_script SceneLWGymBeatBurglar, SCENE_LWGYM_BEATBURGLAR
+;    scene_script SceneLWGymNoop, SCENE_LWGYM_NOOP2
+
     
     def_callbacks
+
+SceneLWGymNoop:
+    end
+
+;SceneLWGymBeatBurglar:
+;    call LWGymBeatBurglar
+;    end
 
 LittleWaterGym_MapEvents:
     db 0, 0 ; filler
@@ -25,7 +37,119 @@ LittleWaterGym_MapEvents:
     def_object_events
 	object_event  26, 12, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerBlackbeltYoshi1, -1
     object_event  22, 16, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerElise1, -1
-    object_event  15, 17, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WALK_UP_DOWN, 3, 3, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerBrant, -1
+    object_event  15, 17, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerBrant, -1
+    object_event  23, 21, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, BurglarDuncanBattle, -1
+
+BurglarDuncanBattle:
+    faceplayer LW_GYM_BURGLAR
+    checkevent EVENT_GOT_TM_THIEF
+    iftrue DuncanAfter
+
+    checkevent EVENT_BEAT_BURGLAR_DUNCAN
+    iftrue LWGymBeatBurglar
+    
+    opentext
+    writetext BurglarDuncanSeenText
+    closetext
+    winlosstext DuncanBeatText, 0
+	loadtrainer BURGLAR, DUNCAN
+	startbattle
+	reloadmapafterbattle
+    setevent EVENT_BEAT_BURGLAR_DUNCAN
+
+    sjump LWGymBeatBurglar
+
+BurglarDuncanSeenText:
+    text "What?"
+    line "What's you"
+    cont "doin' 'ere?"
+
+    para "Yous gonna ruin"
+    line "my big score!"
+    done
+
+DuncanBeatText:
+    text "Aight, I yield!"
+;    setscene SCENE_LWGYM_BEATBURGLAR
+    done
+
+DuncanAfterText:
+    text "Glad yous see it"
+    line "my way!"
+
+    para "Nobody needs ta know"
+    line "we was here..."
+    done
+
+LWGymBeatBurglar:
+    opentext
+    writetext .BurlarGivesThiefTxt
+    yesorno
+    iffalse .no
+    verbosegiveitem TM_THIEF
+    iffalse .NoRoomForThief
+    writetext .yes
+    closetext
+    setevent EVENT_GOT_TM_THIEF
+;    setscene SCENE_LWGYM_NOOP2
+    end
+.BurlarGivesThiefTxt:
+    text "Aight, I yield!"
+
+    para "Ya, I was tryna"
+    line "nab somethin'"
+    cont "good from 'ere."
+    cont "but I's not the"
+    cont "bloke who's"
+    cont "lit 'em up!"
+    
+    para "Question is,"
+    line "What yous doin'"
+    cont "'ere?"
+
+    para "I'll go's on my"
+    line "way..."
+    
+    para "There's nothin'"
+    line "good 'ere anyway."
+
+    para "How's 'bout I "
+    line "gives ya somethin'"
+    cont "nice, and we"
+    cont "forgets 'bout yous"
+    cont "and me's seein' us"
+    cont "'ere?"
+    cont "'Kay?"
+    done
+.yes:
+    text "Glad yous see it"
+    line "my way!"
+
+    para "Nobody needs ta "
+    line "know we's" 
+    cont "were here..."
+    done
+.NoRoomForThief:
+    writetext .noTxt
+;    setscene SCENE_LWGYM_NOOP2
+    closetext
+    end
+.no:
+    writetext .noTxt
+;    setscene SCENE_LWGYM_NOOP2
+    closetext
+    end
+.noTxt:
+    text "Alright. No need ta'"
+    line "get jumpy 'bout it."
+
+    para "Think it ovah..."
+    line "don' rat me out,"
+    cont "and our deal stands."
+    done
+
+DuncanAfter:
+    jumptext DuncanAfterText
 
 GroundGymSign:
     jumptext .GroundGymSignRead
@@ -38,7 +162,6 @@ GroundGymSign:
     cont "Ground Type Gym"
     cont "Leader just ahead!" 
     done
-
 
 TrainerBrant:
     trainer HIKER, ANTHONY1, EVENT_BEAT_HIKER_ANTHONY, BrantSeentText, BrantBeatText, 0, .Script

@@ -122,10 +122,14 @@ ENDM
 	connection south, LittleWaterPath, LITTLE_WATER_PATH, -2
 
 	map_attributes StartHouse, START_HOUSE, $00, 0
-	map_attributes RangerFacility, RANGER_FACILITY, $00, 0
+;	map_attributes RangerFacility, RANGER_FACILITY, $00, 0
 	map_attributes GroundGymF1, GROUND_GYM_F1, $00, 0
 	map_attributes GroundGymB1, GROUND_GYM_B1, $00, 0
 	map_attributes LittleWaterCenter, LITTLE_WATER_CENTER, $00, 0
+	map_attributes LittleWaterBurnedHouse, LITTLE_WATER_BURNED_HOUSE, $00, 0
+	map_attributes LittleWaterBurnedHouse2, LITTLE_WATER_BURNED_HOUSE_2, $00, 0
+	map_attributes LittleWaterUnderBurnedHouses, LITTLE_WATER_UNDER_BURNED_HOUSES, $00, 0
+
 
 	; old map attributes
 
@@ -142,16 +146,16 @@ ENDM
 	connection west, Route34, ROUTE_34, -18
 	connection east, Route33, ROUTE_33, 0
 
-	map_attributes CianwoodCity, CIANWOOD_CITY, $35, EAST
-	connection east, Route41, ROUTE_41, 0
+;	map_attributes CianwoodCity, CIANWOOD_CITY, $35, EAST
+;	connection east, Route41, ROUTE_41, 0
 
 	map_attributes GoldenrodCity, GOLDENROD_CITY, $35, NORTH | SOUTH
 	connection north, Route35, ROUTE_35, 5
 	connection south, Route34, ROUTE_34, 5
 
-	map_attributes OlivineCity, OLIVINE_CITY, $35, NORTH | WEST
-	connection north, Route39, ROUTE_39, 5
-	connection west, Route40, ROUTE_40, 9
+	map_attributes OlivineCity, OLIVINE_CITY, $35, 0
+;	connection north, Route39, ROUTE_39, 5
+;	connection west, Route40, ROUTE_40, 9
 
 	map_attributes EcruteakCity, ECRUTEAK_CITY, $05, SOUTH | WEST | EAST
 	connection south, Route37, ROUTE_37, 5
@@ -221,13 +225,13 @@ ENDM
 	connection south, OlivineCity, OLIVINE_CITY, -5
 	connection east, Route38, ROUTE_38, 0
 
-	map_attributes Route40, ROUTE_40, $35, SOUTH | EAST
-	connection south, Route41, ROUTE_41, -15
-	connection east, OlivineCity, OLIVINE_CITY, -9
+;	map_attributes Route40, ROUTE_40, $35, SOUTH | EAST
+;	connection south, Route41, ROUTE_41, -15
+;	connection east, OlivineCity, OLIVINE_CITY, -9
 
-	map_attributes Route41, ROUTE_41, $35, NORTH | WEST
-	connection north, Route40, ROUTE_40, 15
-	connection west, CianwoodCity, CIANWOOD_CITY, 0
+;	map_attributes Route41, ROUTE_41, $35, NORTH | WEST
+;	connection north, Route40, ROUTE_40, 15
+;	connection west, CianwoodCity, CIANWOOD_CITY, 0
 
 	map_attributes Route42, ROUTE_42, $05, WEST | EAST
 	connection west, EcruteakCity, ECRUTEAK_CITY, -9
@@ -249,33 +253,33 @@ ENDM
 	connection south, Route29, ROUTE_29, -10
 	connection east, Route45, ROUTE_45, -36
 
-	map_attributes PewterCity, PEWTER_CITY, $0f, SOUTH | EAST
-	connection south, Route2, ROUTE_2, 5
-	connection east, Route3, ROUTE_3, 5
+;	map_attributes PewterCity, PEWTER_CITY, $0f, SOUTH | EAST
+;	connection south, Route2, ROUTE_2, 5
+;	connection east, Route3, ROUTE_3, 5
 
-	map_attributes Route2, ROUTE_2, $0f, NORTH | SOUTH
-	connection north, PewterCity, PEWTER_CITY, -5
-	connection south, ViridianCity, VIRIDIAN_CITY, -5
+	map_attributes Route2, ROUTE_2, $0f, 0
+;	connection north, PewterCity, PEWTER_CITY, -5
+;	connection south, ViridianCity, VIRIDIAN_CITY, -5
 
-	map_attributes ViridianCity, VIRIDIAN_CITY, $0f, NORTH | SOUTH | WEST
-	connection north, Route2, ROUTE_2, 5
-	connection south, Route1, ROUTE_1, 10
-	connection west, Route22, ROUTE_22, 4
+	map_attributes ViridianCity, VIRIDIAN_CITY, $0f, 0
+;	connection north, Route2, ROUTE_2, 5
+;	connection south, Route1, ROUTE_1, 10
+;	connection west, Route22, ROUTE_22, 4
 
 	map_attributes Route22, ROUTE_22, $2c, EAST
 	connection east, ViridianCity, VIRIDIAN_CITY, -4
 
-	map_attributes Route1, ROUTE_1, $0f, NORTH | SOUTH
-	connection north, ViridianCity, VIRIDIAN_CITY, -10
-	connection south, PalletTown, PALLET_TOWN, 0
+;	map_attributes Route1, ROUTE_1, $0f, NORTH | SOUTH
+;	connection north, ViridianCity, VIRIDIAN_CITY, -10
+;	connection south, PalletTown, PALLET_TOWN, 0
 
-	map_attributes PalletTown, PALLET_TOWN, $0f, NORTH | SOUTH
-	connection north, Route1, ROUTE_1, 0
-	connection south, Route21, ROUTE_21, 0
+;	map_attributes PalletTown, PALLET_TOWN, $0f, NORTH | SOUTH
+;	connection north, Route1, ROUTE_1, 0
+;	connection south, Route21, ROUTE_21, 0
 
-	map_attributes Route21, ROUTE_21, $43, NORTH | SOUTH
-	connection north, PalletTown, PALLET_TOWN, 0
-	connection south, CinnabarIsland, CINNABAR_ISLAND, 0
+	map_attributes Route21, ROUTE_21, $43, 0
+;	connection north, PalletTown, PALLET_TOWN, 0
+;	connection south, CinnabarIsland, CINNABAR_ISLAND, 0
 
 	map_attributes CinnabarIsland, CINNABAR_ISLAND, $43, NORTH | EAST
 	connection north, Route21, ROUTE_21, 0
@@ -375,13 +379,13 @@ ENDM
 	map_attributes Route25, ROUTE_25, $2c, SOUTH
 	connection south, Route24, ROUTE_24, 0
 
-	map_attributes Route3, ROUTE_3, $2c, WEST | EAST
-	connection west, PewterCity, PEWTER_CITY, -5
-	connection east, Route4, ROUTE_4, 0
+;	map_attributes Route3, ROUTE_3, $2c, WEST | EAST
+;	connection west, PewterCity, PEWTER_CITY, -5
+;	connection east, Route4, ROUTE_4, 0
 
-	map_attributes Route4, ROUTE_4, $2c, WEST | EAST
-	connection west, Route3, ROUTE_3, 0
-	connection east, CeruleanCity, CERULEAN_CITY, -5
+	map_attributes Route4, ROUTE_4, $2c, 0
+;	connection west, Route3, ROUTE_3, 0
+;	connection east, CeruleanCity, CERULEAN_CITY, -5
 
 	map_attributes Route8, ROUTE_8, $2c, WEST | EAST
 	connection west, SaffronCity, SAFFRON_CITY, -9
@@ -585,16 +589,16 @@ ENDM
 	map_attributes VermilionGym, VERMILION_GYM, $00, 0
 	map_attributes Route6SaffronGate, ROUTE_6_SAFFRON_GATE, $00, 0
 	map_attributes Route6UndergroundPathEntrance, ROUTE_6_UNDERGROUND_PATH_ENTRANCE, $00, 0
-	map_attributes RedsHouse1F, REDS_HOUSE_1F, $00, 0
-	map_attributes RedsHouse2F, REDS_HOUSE_2F, $00, 0
-	map_attributes BluesHouse, BLUES_HOUSE, $00, 0
-	map_attributes OaksLab, OAKS_LAB, $00, 0
-	map_attributes PewterNidoranSpeechHouse, PEWTER_NIDORAN_SPEECH_HOUSE, $00, 0
-	map_attributes PewterGym, PEWTER_GYM, $00, 0
-	map_attributes PewterMart, PEWTER_MART, $00, 0
-	map_attributes PewterPokecenter1F, PEWTER_POKECENTER_1F, $00, 0
-	map_attributes PewterPokecenter2FBeta, PEWTER_POKECENTER_2F_BETA, $00, 0
-	map_attributes PewterSnoozeSpeechHouse, PEWTER_SNOOZE_SPEECH_HOUSE, $00, 0
+;	map_attributes RedsHouse1F, REDS_HOUSE_1F, $00, 0
+;	map_attributes RedsHouse2F, REDS_HOUSE_2F, $00, 0
+;	map_attributes BluesHouse, BLUES_HOUSE, $00, 0
+;	map_attributes OaksLab, OAKS_LAB, $00, 0
+;	map_attributes PewterNidoranSpeechHouse, PEWTER_NIDORAN_SPEECH_HOUSE, $00, 0
+;	map_attributes PewterGym, PEWTER_GYM, $00, 0
+;	map_attributes PewterMart, PEWTER_MART, $00, 0
+;	map_attributes PewterPokecenter1F, PEWTER_POKECENTER_1F, $00, 0
+;	map_attributes PewterPokecenter2FBeta, PEWTER_POKECENTER_2F_BETA, $00, 0
+;	map_attributes PewterSnoozeSpeechHouse, PEWTER_SNOOZE_SPEECH_HOUSE, $00, 0
 	map_attributes OlivinePort, OLIVINE_PORT, $0a, 0
 	map_attributes VermilionPort, VERMILION_PORT, $0a, 0
 	map_attributes FastShip1F, FAST_SHIP_1F, $00, 0
@@ -662,19 +666,19 @@ ENDM
 	map_attributes Route16Gate, ROUTE_16_GATE, $00, 0
 	map_attributes Route7SaffronGate, ROUTE_7_SAFFRON_GATE, $00, 0
 	map_attributes Route17Route18Gate, ROUTE_17_ROUTE_18_GATE, $00, 0
-	map_attributes ManiasHouse, MANIAS_HOUSE, $00, 0
-	map_attributes CianwoodGym, CIANWOOD_GYM, $00, 0
-	map_attributes CianwoodPokecenter1F, CIANWOOD_POKECENTER_1F, $00, 0
-	map_attributes CianwoodPharmacy, CIANWOOD_PHARMACY, $00, 0
-	map_attributes CianwoodPhotoStudio, CIANWOOD_PHOTO_STUDIO, $00, 0
-	map_attributes CianwoodLugiaSpeechHouse, CIANWOOD_LUGIA_SPEECH_HOUSE, $00, 0
-	map_attributes PokeSeersHouse, POKE_SEERS_HOUSE, $00, 0
-	map_attributes BattleTower1F, BATTLE_TOWER_1F, $00, 0
-	map_attributes BattleTowerBattleRoom, BATTLE_TOWER_BATTLE_ROOM, $00, 0
-	map_attributes BattleTowerElevator, BATTLE_TOWER_ELEVATOR, $00, 0
-	map_attributes BattleTowerHallway, BATTLE_TOWER_HALLWAY, $00, 0
-	map_attributes Route40BattleTowerGate, ROUTE_40_BATTLE_TOWER_GATE, $00, 0
-	map_attributes BattleTowerOutside, BATTLE_TOWER_OUTSIDE, $05, 0
+;	map_attributes ManiasHouse, MANIAS_HOUSE, $00, 0
+;	map_attributes CianwoodGym, CIANWOOD_GYM, $00, 0
+;	map_attributes CianwoodPokecenter1F, CIANWOOD_POKECENTER_1F, $00, 0
+;	map_attributes CianwoodPharmacy, CIANWOOD_PHARMACY, $00, 0
+;	map_attributes CianwoodPhotoStudio, CIANWOOD_PHOTO_STUDIO, $00, 0
+;	map_attributes CianwoodLugiaSpeechHouse, CIANWOOD_LUGIA_SPEECH_HOUSE, $00, 0
+;	map_attributes PokeSeersHouse, POKE_SEERS_HOUSE, $00, 0
+;	map_attributes BattleTower1F, BATTLE_TOWER_1F, $00, 0
+;	map_attributes BattleTowerBattleRoom, BATTLE_TOWER_BATTLE_ROOM, $00, 0
+;	map_attributes BattleTowerElevator, BATTLE_TOWER_ELEVATOR, $00, 0
+;	map_attributes BattleTowerHallway, BATTLE_TOWER_HALLWAY, $00, 0
+;	map_attributes Route40BattleTowerGate, ROUTE_40_BATTLE_TOWER_GATE, $00, 0
+;	map_attributes BattleTowerOutside, BATTLE_TOWER_OUTSIDE, $05, 0
 	map_attributes ViridianGym, VIRIDIAN_GYM, $00, 0
 	map_attributes ViridianNicknameSpeechHouse, VIRIDIAN_NICKNAME_SPEECH_HOUSE, $00, 0
 	map_attributes TrainerHouse1F, TRAINER_HOUSE_1F, $00, 0

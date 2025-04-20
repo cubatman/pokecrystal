@@ -2,6 +2,44 @@
 
 JohtoGrassWildMons:
 
+
+	def_grass_wildmons LITTLE_WATER_UNDER_BURNED_HOUSES
+	db 8 percent, 8 percent, 8 percent ; encounter rates: morn/day/nite
+	; morn WEEDLE, MANKEY, HOOTHOOT, NATU, PARAS, BEEDRILL, BELLSPROUT, TANGELA, ELEKID
+	db 7,  ZUBAT	      	; 25% | 40
+	db 12, DIGLETT	      	; 25% | 40
+	db 13, ZUBAT       		; 15% | 
+	db 12, GEODUDE	        ; 10% | 10
+	db 14, DIGLETT     		; 10% |
+	db 11, TYROGUE 	      	; 5%  |  5
+	db 12, DIGLETT     		; 4%  |  
+	db 16, DUNSPARCE       	; 3%  |  5
+	db 13, DUNSPARCE        ; 2%  |
+	db 12, DIGLETT    	    ; 1%  |
+	; day SENTRET, PIDGEY, CATERPIE / METAPOD, PSYDUCK, YANMA, FARFETCH_D
+	db 7,  ZUBAT	      	; 25% | 40
+	db 12, DIGLETT	      	; 25% | 40
+	db 13, ZUBAT       		; 15% | 
+	db 12, GEODUDE	        ; 10% | 10
+	db 14, DIGLETT     		; 10% |
+	db 11, TYROGUE 	      	; 5%  |  5
+	db 12, DIGLETT     		; 4%  |  
+	db 16, DUNSPARCE       	; 3%  |  5
+	db 13, DUNSPARCE        ; 2%  |
+	db 12, DIGLETT    	    ; 1%  |
+	; night WEEDLE / KAKUNA, HOOTHOOT, RATTATA, WOOPER, ODDISH
+	db 7,  ZUBAT	      	; 25% | 40
+	db 12, DIGLETT	      	; 25% | 40
+	db 13, ZUBAT       		; 15% | 
+	db 12, GEODUDE	        ; 10% | 10
+	db 14, DIGLETT     		; 10% |
+	db 11, TYROGUE 	      	; 5%  |  5
+	db 12, DIGLETT     		; 4%  |  
+	db 16, DUNSPARCE       	; 3%  |  5
+	db 13, DUNSPARCE        ; 2%  |
+	db 12, DIGLETT    	    ; 1%  |
+	end_grass_wildmons
+
 	def_grass_wildmons HIDDEN_POWER_CLEARING
 	db 15 percent, 15 percent, 15 percent ; encounter rates: morn/day/nite
 	; morn WEEDLE, MANKEY, HOOTHOOT, NATU, PARAS, BEEDRILL, BELLSPROUT, TANGELA, ELEKID

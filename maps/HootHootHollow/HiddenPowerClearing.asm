@@ -18,8 +18,8 @@ HiddenPowerClearing_MapEvents:
     def_bg_events
     bg_event 8, 7, BGEVENT_READ, StatueReadEventHiddnePowerClearing
     bg_event 9, 7, BGEVENT_READ, StatueReadEventHiddnePowerClearing
-    bg_event 8, 6, BGEVENT_READ, StatueReadEventHiddnePowerClearing
-    bg_event 9, 6, BGEVENT_READ, StatueReadEventHiddnePowerClearing
+;   bg_event 8, 6, BGEVENT_READ, StatueReadEventHiddnePowerClearing
+;   bg_event 9, 6, BGEVENT_READ, StatueReadEventHiddnePowerClearing
     bg_event 10, 8, BGEVENT_ITEM, GiveHiddenPower
 
 

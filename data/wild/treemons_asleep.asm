@@ -12,6 +12,7 @@ AsleepTreeMonsNite:
 	db EXEGGCUTE
 	db LEDYBA
 	db AIPOM
+	db PIDGEY
 	db -1 ; end
 
 AsleepTreeMonsDay:

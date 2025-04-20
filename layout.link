@@ -44,7 +44,6 @@ ROMX $06
 ROMX $07
 	"Roofs"
 	"Tileset Data 2"
-	"Extra Songs 1"
 ROMX $08
 	"Clock Reset"
 	"Tileset Data 3"
@@ -116,6 +115,7 @@ ROMX $25
 ROMX $26
 	"Map Scripts 11"
 ROMX $27
+	"Map Scripts T"
 	"Map Scripts 12"
 ROMX $28
 	"Phone Scripts 1"
@@ -190,7 +190,8 @@ ROMX $45
 ROMX $46
 	"mobile46"
 ROMX $47
-	"Battle Tower"
+;	"Battle Tower"
+	"Extra Songs 1"
 ROMX $48
 	org $4000
 	"Pic Pointers"

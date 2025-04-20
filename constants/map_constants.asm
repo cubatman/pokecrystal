@@ -294,25 +294,25 @@ ENDM
 	map_const ROUTE_6_UNDERGROUND_PATH_ENTRANCE,            4,  4 ; 13
 	endgroup
 
-	newgroup PALLET                                               ; 13
-	map_const ROUTE_1,                                     10, 18 ;  1
-	map_const PALLET_TOWN,                                 10,  9 ;  2
-	map_const REDS_HOUSE_1F,                                4,  4 ;  3
-	map_const REDS_HOUSE_2F,                                4,  4 ;  4
-	map_const BLUES_HOUSE,                                  4,  4 ;  5
-	map_const OAKS_LAB,                                     5,  6 ;  6
-	endgroup
+;	newgroup PALLET                                               ; 13
+;	map_const ROUTE_1,                                     10, 18 ;  1
+;	map_const PALLET_TOWN,                                 10,  9 ;  2
+;	map_const REDS_HOUSE_1F,                                4,  4 ;  3
+;	map_const REDS_HOUSE_2F,                                4,  4 ;  4
+;	map_const BLUES_HOUSE,                                  4,  4 ;  5
+;	map_const OAKS_LAB,                                     5,  6 ;  6
+;	endgroup
 
-	newgroup PEWTER                                               ; 14
-	map_const ROUTE_3,                                     30,  9 ;  1
-	map_const PEWTER_CITY,                                 20, 18 ;  2
-	map_const PEWTER_NIDORAN_SPEECH_HOUSE,                  4,  4 ;  3
-	map_const PEWTER_GYM,                                   5,  7 ;  4
-	map_const PEWTER_MART,                                  6,  4 ;  5
-	map_const PEWTER_POKECENTER_1F,                         5,  4 ;  6
-	map_const PEWTER_POKECENTER_2F_BETA,                    8,  4 ;  7
-	map_const PEWTER_SNOOZE_SPEECH_HOUSE,                   4,  4 ;  8
-	endgroup
+;	newgroup PEWTER                                               ; 14
+;	map_const ROUTE_3,                                     30,  9 ;  1
+;	map_const PEWTER_CITY,                                 20, 18 ;  2
+;	map_const PEWTER_NIDORAN_SPEECH_HOUSE,                  4,  4 ;  3
+;	map_const PEWTER_GYM,                                   5,  7 ;  4
+;	map_const PEWTER_MART,                                  6,  4 ;  5
+;	map_const PEWTER_POKECENTER_1F,                         5,  4 ;  6
+;	map_const PEWTER_POKECENTER_2F_BETA,                    8,  4 ;  7
+;	map_const PEWTER_SNOOZE_SPEECH_HOUSE,                   4,  4 ;  8
+;	endgroup
 
 	newgroup FAST_SHIP                                            ; 15
 	map_const OLIVINE_PORT,                                10, 18 ;  1
@@ -418,25 +418,25 @@ ENDM
 	map_const ROUTE_17_ROUTE_18_GATE,                       5,  4 ; 26
 	endgroup
 
-	newgroup CIANWOOD                                             ; 22
-	map_const ROUTE_40,                                    10, 18 ;  1
-	map_const ROUTE_41,                                    25, 27 ;  2
-	map_const CIANWOOD_CITY,                               15, 27 ;  3
-	map_const MANIAS_HOUSE,                                 4,  4 ;  4
-	map_const CIANWOOD_GYM,                                 5,  9 ;  5
-	map_const CIANWOOD_POKECENTER_1F,                       5,  4 ;  6
-	map_const CIANWOOD_PHARMACY,                            4,  4 ;  7
-	map_const CIANWOOD_PHOTO_STUDIO,                        4,  4 ;  8
-	map_const CIANWOOD_LUGIA_SPEECH_HOUSE,                  4,  4 ;  9
-	map_const POKE_SEERS_HOUSE,                             4,  4 ; 10
-	map_const BATTLE_TOWER_1F,                              8,  5 ; 11
-	map_const BATTLE_TOWER_BATTLE_ROOM,                     4,  4 ; 12
-	map_const BATTLE_TOWER_ELEVATOR,                        2,  2 ; 13
-	map_const BATTLE_TOWER_HALLWAY,                        11,  2 ; 14
-	map_const ROUTE_40_BATTLE_TOWER_GATE,                   5,  4 ; 15
-	map_const BATTLE_TOWER_OUTSIDE,                        10, 14 ; 16
-	endgroup
-
+	;newgroup CIANWOOD                                             ; 22
+	;map_const ROUTE_40,                                    10, 18 ;  1
+	;map_const ROUTE_41,                                    25, 27 ;  2
+	;map_const CIANWOOD_CITY,                               15, 27 ;  3
+	;map_const MANIAS_HOUSE,                                 4,  4 ;  4
+	;map_const CIANWOOD_GYM,                                 5,  9 ;  5
+	;map_const CIANWOOD_POKECENTER_1F,                       5,  4 ;  6
+	;map_const CIANWOOD_PHARMACY,                            4,  4 ;  7
+	;map_const CIANWOOD_PHOTO_STUDIO,                        4,  4 ;  8
+	;map_const CIANWOOD_LUGIA_SPEECH_HOUSE,                  4,  4 ;  9
+	;map_const POKE_SEERS_HOUSE,                             4,  4 ; 10
+	;map_const BATTLE_TOWER_1F,                              8,  5 ; 11
+	;map_const BATTLE_TOWER_BATTLE_ROOM,                     4,  4 ; 12
+	;map_const BATTLE_TOWER_ELEVATOR,                        2,  2 ; 13
+	;map_const BATTLE_TOWER_HALLWAY,                        11,  2 ; 14
+	;map_const ROUTE_40_BATTLE_TOWER_GATE,                   5,  4 ; 15
+	;map_const BATTLE_TOWER_OUTSIDE,                        10, 14 ; 16
+	;endgroup
+;
 	newgroup VIRIDIAN                                             ; 23
 	map_const ROUTE_2,                                     10, 27 ;  1
 	map_const ROUTE_22,                                    20,  9 ;  2
@@ -501,9 +501,9 @@ ENDM
 ;	map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 11
 ;	endgroup
 
-	newgroup RANGERFACILITY									       ; 27
-	map_const RANGER_FACILITY,                               18, 10 ; 1
-	endgroup
+;	newgroup RANGERFACILITY									       ; 27
+;	map_const RANGER_FACILITY,                               18, 10 ; 1
+;	endgroup
 
 	newgroup LITTLEWATER                                        ; 28	
 	map_const LITTLE_WATER,                                  24, 12 ; 1
@@ -516,6 +516,9 @@ ENDM
 	map_const GROUND_GYM_F1,								 11,  9 ; 8
 	map_const GROUND_GYM_B1,                                 11,  9 ; 9
 	map_const LITTLE_WATER_CENTER,							 5,   4 ; 10
+	map_const LITTLE_WATER_BURNED_HOUSE,					 7,   5 ; 11
+	map_const LITTLE_WATER_BURNED_HOUSE_2,					 7,   5 ; 12
+	map_const LITTLE_WATER_UNDER_BURNED_HOUSES,				 12, 20 ; 13
 	endgroup											
 
 	; group hoot-hoot-hollow

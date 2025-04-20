@@ -46,13 +46,13 @@ Route34IlexForestGateTeacherScript:
 	opentext
 	checkevent EVENT_FOREST_IS_RESTLESS
 	iftrue .ForestIsRestless
-	checkevent EVENT_GOT_TM12_SWEET_SCENT
+	checkevent EVENT_GOT_TM_THIEF
 	iftrue .GotSweetScent
 	writetext Route34IlexForestGateTeacherText
 	promptbutton
 	verbosegiveitem TM_SWEET_SCENT
 	iffalse .NoRoom
-	setevent EVENT_GOT_TM12_SWEET_SCENT
+	setevent EVENT_GOT_TM_THIEF
 .GotSweetScent:
 	writetext Route34IlexForestGateTeacher_GotSweetScent
 	waitbutton

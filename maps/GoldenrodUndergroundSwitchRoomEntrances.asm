@@ -818,10 +818,10 @@ GruntM25AfterBattleText:
 	cont "open and close."
 	done
 
-BurglarDuncanSeenText:
-	text "Fork over your"
-	line "goodies!"
-	done
+;BurglarDuncanSeenText:
+;	text "Fork over your"
+;	line "goodies!"
+;	done
 
 BurglarDuncanBeatenText:
 	text "Mercy!"

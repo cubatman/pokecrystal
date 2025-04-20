@@ -368,10 +368,9 @@ YoungsterGroup:
 	db  8, SPEAROW
 	db -1 ; end
 
-	; YOUNGSTER (6)
-	db "IAN@", TRAINERTYPE_NORMAL
-	db 10, MANKEY
-	db 12, DIGLETT
+	; YOUNGSTER (6) ; used in LWPath
+	db "IAN@", TRAINERTYPE_MOVES
+	db 8, SWINUB, HEADBUTT, GROWL, NO_MOVE, NO_MOVE
 	db -1 ; end
 
 	; YOUNGSTER (7)

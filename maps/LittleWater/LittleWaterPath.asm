@@ -9,6 +9,7 @@
     const LWPathHiker1      ; 8
     const LWPathMiniBoss    ; 9
     const LWPathLass        ; 10
+    const LWPathSwinubTnr   ; 11
 
 LittleWaterPath_MapScripts:
     def_scene_scripts
@@ -33,10 +34,38 @@ LittleWaterPath_MapEvents:
     object_event 11, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT,  0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, LWPathYng1Battle, -1
     object_event 19, 5,  SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, LWPathCamper2Battle, -1
     object_event 12, 9, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL,  0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LWPathItemballPotion, EVENT_UNION_CAVE_1F_POTION
-    object_event 17, 14, YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, LWPathCamper3Battle, -1
+    object_event 17, 14, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, LWPathCamper3Battle, -1
     object_event 15, 8, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, LWPathHiker1Battle, -1
     object_event 27, 9, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 0, LWPathCoolTrainerBattle, -1
     object_event 18, 17, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LWPathBowLass, -1
+    object_event 5,  12, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, -1, 1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, LWPathSwinubTrainer, -1
+
+
+LWPathSwinubTrainer:
+    trainer YOUNGSTER, IAN,  EVENT_BEAT_YOUNGSTER_IAN, LWIanSeenTxt, LWIanBeatTxt, 0, .Script
+.Script:
+    endifjustbattled
+    opentext
+    writetext LWIanBeatTxt
+    waitbutton
+    closetext
+    end
+
+LWIanSeenTxt:
+    text "I caught my first"
+    line "#MON this morning!"
+
+    para "I've never seen"
+    line "it here before,"
+    cont "it must be rare!" 
+    done
+
+LWIanBeatTxt:
+    text "That was my first"
+    line "#MON battle!"
+    cont "It's no surprise I"
+    cont "lost!"
+    done
 
 LWPathBowLass:
     checkevent EVENT_BEAT_COOLTRAINERM_AARON

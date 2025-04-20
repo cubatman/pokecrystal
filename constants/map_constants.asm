@@ -487,18 +487,48 @@ ENDM
 	map_const ROUTE_5_CLEANSE_TAG_HOUSE,                    4,  4 ; 15
 	endgroup
 
-	newgroup CHERRYGROVE                                          ; 26
-	map_const ROUTE_30,                                    10, 27 ;  1
-	map_const ROUTE_31,                                    20,  9 ;  2
-	map_const CHERRYGROVE_CITY,                            20,  9 ;  3
-	map_const CHERRYGROVE_MART,                             6,  4 ;  4
-	map_const CHERRYGROVE_POKECENTER_1F,                    5,  4 ;  5
-	map_const CHERRYGROVE_GYM_SPEECH_HOUSE,                 4,  4 ;  6
-	map_const GUIDE_GENTS_HOUSE,                            4,  4 ;  7
-	map_const CHERRYGROVE_EVOLUTION_SPEECH_HOUSE,           4,  4 ;  8
-	map_const ROUTE_30_BERRY_HOUSE,                         4,  4 ;  9
-	map_const MR_POKEMONS_HOUSE,                            4,  4 ; 10
-	map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 11
+;	newgroup CHERRYGROVE                                          ; 26
+;	map_const ROUTE_30,                                    10, 27 ;  1
+;	map_const ROUTE_31,                                    20,  9 ;  2
+;	map_const CHERRYGROVE_CITY,                            20,  9 ;  3
+;	map_const CHERRYGROVE_MART,                             6,  4 ;  4
+;	map_const CHERRYGROVE_POKECENTER_1F,                    5,  4 ;  5
+;	map_const CHERRYGROVE_GYM_SPEECH_HOUSE,                 4,  4 ;  6
+;	map_const GUIDE_GENTS_HOUSE,                            4,  4 ;  7
+;	map_const CHERRYGROVE_EVOLUTION_SPEECH_HOUSE,           4,  4 ;  8
+;	map_const ROUTE_30_BERRY_HOUSE,                         4,  4 ;  9
+;	map_const MR_POKEMONS_HOUSE,                            4,  4 ; 10
+;	map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 11
+;	endgroup
+
+	newgroup RANGERFACILITY									       ; 27
+	map_const RANGER_FACILITY,                               18, 10 ; 1
 	endgroup
 
-DEF NUM_MAP_GROUPS EQU const_value ; 26
+	newgroup LITTLEWATER                                        ; 28	
+	map_const LITTLE_WATER,                                  24, 12 ; 1
+	map_const LITTLE_WATER_PATH,                             16, 12 ; 2
+	map_const LITTLE_WATER_HOLLOW,							 18, 12 ; 3
+	map_const LITTLE_WATER_FIELD,                            16,  4 ; 4
+	map_const LITTLE_WATER_MAIN,                             8,  12 ; 5
+	map_const START_HOUSE,                                   6,   4 ; 6
+	map_const LITTLE_WATER_GYM,                              18, 12 ; 7
+	map_const GROUND_GYM_F1,								 11,  9 ; 8
+	map_const GROUND_GYM_B1,                                 11,  9 ; 9
+	map_const LITTLE_WATER_CENTER,							 5,   4 ; 10
+	endgroup											
+
+	; group hoot-hoot-hollow
+	; TestMap (HollowEntrance) 12x18
+	; HiddenPowerClearing 6x6
+	; Hollow2 12x9
+	; Hollow3 12x9
+	; HollowBridge 14x14
+
+	newgroup WANDER_FOREST
+	map_const WANDER_FOREST,                               12, 18
+	map_const HIDDEN_POWER_CLEARING,						6, 6
+	endgroup
+
+
+DEF NUM_MAP_GROUPS EQU const_value ; 28

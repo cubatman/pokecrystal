@@ -1,8 +1,8 @@
 MoveNames::
 	list_start
-	li "POUND"
+	li "SNARL"
 	li "KARATE CHOP"
-	li "DOUBLESLAP"
+	li "Astonish" ;was DOUBLESLAP
 	li "COMET PUNCH"
 	li "MEGA PUNCH"
 	li "PAY DAY"
@@ -19,8 +19,8 @@ MoveNames::
 	li "WING ATTACK"
 	li "WHIRLWIND"
 	li "FLY"
-	li "BIND"
-	li "SLAM"
+	li "OMINOUS WIND" ; was BIND
+	li "SLAM" 
 	li "VINE WHIP"
 	li "STOMP"
 	li "DOUBLE KICK"
@@ -131,9 +131,9 @@ MoveNames::
 	li "SWIFT"
 	li "SKULL BASH"
 	li "SPIKE CANNON"
-	li "CONSTRICT"
+	li "SILVER WIND"
 	li "AMNESIA"
-	li "KINESIS"
+	li "NASTY PLOT" ; was KINESIS
 	li "SOFTBOILED"
 	li "HI JUMP KICK"
 	li "GLARE"
@@ -153,7 +153,7 @@ MoveNames::
 	li "ACID ARMOR"
 	li "CRABHAMMER"
 	li "EXPLOSION"
-	li "FURY SWIPES"
+	li "SIGNAL BEAM"
 	li "BONEMERANG"
 	li "REST"
 	li "ROCK SLIDE"
@@ -184,7 +184,7 @@ MoveNames::
 	li "PROTECT"
 	li "MACH PUNCH"
 	li "SCARY FACE"
-	li "FAINT ATTACK"
+	li "FEINT ATTACK"
 	li "SWEET KISS"
 	li "BELLY DRUM"
 	li "SLUDGE BOMB"

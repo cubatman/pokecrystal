@@ -35,14 +35,32 @@ Marts:
 	dw MartMtMoon
 	dw MartIndigoPlateau
 	dw MartUnderground
+	dw MartLittleWaterSpecial1
+	dw MartLittleWaterSpecial2
 	assert_table_length NUM_MARTS
 
-MartCherrygrove:
+MartLittleWaterSpecial1: ;before beating gym
+	db 2 ; # items
+	db BERRY
+	db TM_ROAR
+	db -1 ; end
+
+MartLittleWaterSpecial2: ;after beating gym
 	db 4 ; # items
+	db BERRY
+	db TM_ROAR
+	db TM_MUD_SLAP
+	db TM_HEADBUTT
+	db -1 ; end
+
+MartCherrygrove: ; Little Water
+	db 6 ; # items
 	db POTION
+	db POKE_BALL
 	db ANTIDOTE
 	db PARLYZ_HEAL
 	db AWAKENING
+	db ESCAPE_ROPE
 	db -1 ; end
 
 MartCherrygroveDex:

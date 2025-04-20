@@ -130,9 +130,9 @@ CutFunction:
 	dw .FailCut
 
 .CheckAble:
-	ld de, ENGINE_HIVEBADGE
-	call CheckBadge
-	jr c, .nohivebadge
+;	ld de, ENGINE_HIVEBADGE
+;	call CheckBadge
+;	jr c, .nohivebadge
 	call CheckMapForSomethingToCut
 	jr c, .nothingtocut
 	ld a, $1

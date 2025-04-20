@@ -300,9 +300,11 @@ INCBIN "data/tilesets/beta_word_room_metatiles.bin"
 TilesetBetaWordRoomColl::
 TilesetHoOhWordRoomColl::
 TilesetKabutoWordRoomColl::
-TilesetOmanyteWordRoomColl::
 TilesetAerodactylWordRoomColl::
 INCLUDE "data/tilesets/beta_word_room_collision.asm"
+
+TilesetOmanyteWordRoomColl::
+INCLUDE "data/tilesets/omanyte_word_room_collision.asm"
 
 
 SECTION "Tileset Data 7", ROMX
@@ -311,9 +313,11 @@ TilesetRuinsOfAlphGFX::
 TilesetBetaWordRoomGFX::
 TilesetHoOhWordRoomGFX::
 TilesetKabutoWordRoomGFX::
-TilesetOmanyteWordRoomGFX::
 TilesetAerodactylWordRoomGFX::
 INCBIN "gfx/tilesets/ruins_of_alph.2bpp.lz"
+
+TilesetOmanyteWordRoomGFX::
+INCBIN "gfx/tilesets/omanyte_word_room.2bpp.lz"
 
 TilesetRuinsOfAlphMeta::
 INCBIN "data/tilesets/ruins_of_alph_metatiles.bin"

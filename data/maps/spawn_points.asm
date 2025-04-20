@@ -8,7 +8,9 @@ SpawnPoints:
 ; entries correspond to SPAWN_* constants
 	table_width 4
 
-	spawn PLAYERS_HOUSE_2F,            3,  3
+	spawn START_HOUSE,                 4,  3
+;	spawn NEW_BARK_TOWN,              13,  6
+;	spawn PLAYERS_HOUSE_2F,            3,  3
 	spawn VIRIDIAN_POKECENTER_1F,      5,  3
 
 	spawn PALLET_TOWN,                 5,  6
@@ -25,7 +27,7 @@ SpawnPoints:
 	spawn ROUTE_23,                    9,  6
 
 	spawn NEW_BARK_TOWN,              13,  6
-	spawn CHERRYGROVE_CITY,           29,  4
+	spawn NEW_BARK_TOWN,              1,   1
 	spawn VIOLET_CITY,                31, 26
 	spawn ROUTE_32,                   11, 74
 	spawn AZALEA_TOWN,                15, 10

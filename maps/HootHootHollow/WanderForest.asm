@@ -47,8 +47,8 @@ StatueReadEvent:
     text "It's a statue of"
     line "a great NOCTOWL"
     para "The plaque reads:"
-    line "''Feeling lost?"
+    line "“Feeling lost?"
     para "The way home is"
     line "closer than you"
-    cont "think!!''"
+    cont "think!!”"
     done

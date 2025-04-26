@@ -1072,7 +1072,10 @@ LittleWaterBurnedHouse2_Blocks:
 	INCBIN "maps/LittleWater/LittleWaterBurnedHouse2.blk"
 
 LittleWaterUnderBurnedHouses_Blocks:
-	INCBIN "maps/LittleWater/LWCaveUnderBurnedHouses.blk"
+	INCBIN "maps/ShudderCave/LWCaveUnderBurnedHouses.blk"
+
+ShudderCaveEntrance_Blocks:
+	INCBIN "maps/ShudderCave/ShudderCaveEntrance.blk"
 
 WanderForest_Blocks:
 	INCBIN "maps/HootHootHollow/WanderForest.blk"

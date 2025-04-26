@@ -46,6 +46,7 @@ DEF SCGB_DEFAULT EQU $ff
 ; PredefPals indexes (see gfx/sgb/predef.pal)
 ; GetPredefPal arguments (see engine/gfx/color.asm)
 	const_def
+	const PREDEFPAL_SHUDDER_CAVE
 	const PREDEFPAL_WANDER_FOREST
 	const PREDEFPAL_LITTLE_WATER
 ;	const PREDEFPAL_RANGER_FACILITY

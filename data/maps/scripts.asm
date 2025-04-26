@@ -233,7 +233,8 @@ INCLUDE "maps/HootHootHollow/WanderForest.asm"
 INCLUDE "maps/HootHootHollow/HiddenPowerClearing.asm"
 INCLUDE "maps/LittleWater/LittleWaterBurnedHouse1.asm"
 INCLUDE "maps/LittleWater/LittleWaterBurnedHouse2.asm"
-INCLUDE "maps/LittleWater/LWCaveUnderBurnedHouses.asm"
+INCLUDE "maps/ShudderCave/LWCaveUnderBurnedHouses.asm"
+INCLUDE "maps/ShudderCave/ShudderCaveEntrance.asm"
 
 
 INCLUDE "maps/OlivinePokecenter1F.asm"

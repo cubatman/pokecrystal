@@ -3,41 +3,78 @@
 JohtoGrassWildMons:
 
 
+	def_grass_wildmons SHUDDER_CAVE_ENTRANCE
+	db 8 percent, 8 percent, 8 percent ; encounter rates: morn/day/nite
+	; morn WEEDLE, MANKEY, HOOTHOOT, NATU, PARAS, BEEDRILL, BELLSPROUT, TANGELA, ELEKID
+	db 7,  ZUBAT	      	; 25% | 25
+	db 12, DIGLETT	      	; 25% | 25
+	db 13, MACHOP      		; 15% | 16
+	db 12, GEODUDE	        ; 10% | 10
+	db 8, CLEFFA     		; 10% | 10
+	db 13, TEDDIURSA      	; 5%  |  5
+	db 8, MAGBY 	   		; 4%  |  7
+	db 8, MAGBY		       	; 3%  | 
+	db 11, ABRA		        ; 2%  | 2
+	db 15, CLEFAIRY    	    ; 1%  | 1
+	; day SENTRET, PIDGEY, CATERPIE / METAPOD, PSYDUCK, YANMA, FARFETCH_D
+	db 7,  ZUBAT	      	; 25% | 25
+	db 12, DIGLETT	      	; 25% | 25
+	db 13, MACHOP      		; 15% | 16
+	db 12, GEODUDE	        ; 10% | 10
+	db 8, CLEFFA     		; 10% | 10
+	db 13, TEDDIURSA      	; 5%  |  5
+	db 8, MAGBY 	   		; 4%  |  7
+	db 8, MAGBY		       	; 3%  | 
+	db 11, ABRA		        ; 2%  | 2
+	db 15, CLEFAIRY    	    ; 1%  | 1
+	; night WEEDLE / KAKUNA, HOOTHOOT, RATTATA, WOOPER, ODDISH
+	db 7,  ZUBAT	      	; 25% | 25
+	db 12, DIGLETT	      	; 25% | 25
+	db 13, MACHOP      		; 15% | 16
+	db 12, GEODUDE	        ; 10% | 10
+	db 8, CLEFFA     		; 10% | 10
+	db 13, TEDDIURSA      	; 5%  |  5
+	db 8, MAGBY 	   		; 4%  |  7
+	db 8, MAGBY		       	; 3%  | 
+	db 11, ABRA		        ; 2%  | 2
+	db 15, CLEFAIRY    	    ; 1%  | 1
+	end_grass_wildmons
+
 	def_grass_wildmons LITTLE_WATER_UNDER_BURNED_HOUSES
 	db 8 percent, 8 percent, 8 percent ; encounter rates: morn/day/nite
 	; morn WEEDLE, MANKEY, HOOTHOOT, NATU, PARAS, BEEDRILL, BELLSPROUT, TANGELA, ELEKID
 	db 7,  ZUBAT	      	; 25% | 40
-	db 12, DIGLETT	      	; 25% | 40
+	db 12, DIGLETT	      	; 25% | 38
 	db 13, ZUBAT       		; 15% | 
 	db 12, GEODUDE	        ; 10% | 10
 	db 14, DIGLETT     		; 10% |
-	db 11, TYROGUE 	      	; 5%  |  5
-	db 12, DIGLETT     		; 4%  |  
-	db 16, DUNSPARCE       	; 3%  |  5
-	db 13, DUNSPARCE        ; 2%  |
-	db 12, DIGLETT    	    ; 1%  |
+	db 8, TYROGUE 	      	; 5%  |  7
+	db 13, DUNSPARCE     	; 4%  |  5
+	db 15, DIGLETT       	; 3%  |  
+	db 8, TYROGUE	        ; 2%  |
+	db 16, DUNSPARCE   	    ; 1%  |
 	; day SENTRET, PIDGEY, CATERPIE / METAPOD, PSYDUCK, YANMA, FARFETCH_D
 	db 7,  ZUBAT	      	; 25% | 40
-	db 12, DIGLETT	      	; 25% | 40
+	db 12, DIGLETT	      	; 25% | 38
 	db 13, ZUBAT       		; 15% | 
 	db 12, GEODUDE	        ; 10% | 10
 	db 14, DIGLETT     		; 10% |
-	db 11, TYROGUE 	      	; 5%  |  5
-	db 12, DIGLETT     		; 4%  |  
-	db 16, DUNSPARCE       	; 3%  |  5
-	db 13, DUNSPARCE        ; 2%  |
-	db 12, DIGLETT    	    ; 1%  |
+	db 8, TYROGUE 	      	; 5%  |  7
+	db 13, DUNSPARCE     	; 4%  |  5
+	db 15, DIGLETT       	; 3%  |  
+	db 8, TYROGUE	        ; 2%  |
+	db 16, DUNSPARCE   	    ; 1%  |
 	; night WEEDLE / KAKUNA, HOOTHOOT, RATTATA, WOOPER, ODDISH
 	db 7,  ZUBAT	      	; 25% | 40
-	db 12, DIGLETT	      	; 25% | 40
+	db 12, DIGLETT	      	; 25% | 38
 	db 13, ZUBAT       		; 15% | 
 	db 12, GEODUDE	        ; 10% | 10
 	db 14, DIGLETT     		; 10% |
-	db 11, TYROGUE 	      	; 5%  |  5
-	db 12, DIGLETT     		; 4%  |  
-	db 16, DUNSPARCE       	; 3%  |  5
-	db 13, DUNSPARCE        ; 2%  |
-	db 12, DIGLETT    	    ; 1%  |
+	db 8, TYROGUE 	      	; 5%  |  7
+	db 13, DUNSPARCE     	; 4%  |  5
+	db 15, DIGLETT       	; 3%  |  
+	db 8, TYROGUE	        ; 2%  |
+	db 16, DUNSPARCE   	    ; 1%  |
 	end_grass_wildmons
 
 	def_grass_wildmons HIDDEN_POWER_CLEARING

@@ -4,6 +4,11 @@ LittleWaterUnderBurnedHouses_MapScripts:
     def_scene_scripts
     
     def_callbacks
+;    callback MAPCALLBACK_NEWMAP, EnableTyrogue
+
+;EnableTyrogue:
+ ;   setevent EVENT_GOT_TYROGUE_FROM_KIYO
+  ;  end
 
 LittleWaterUnderBurnedHouses_MapEvents:
     db 0, 0 ; filler
@@ -20,7 +25,7 @@ LittleWaterUnderBurnedHouses_MapEvents:
 
     warp_event 13, 33, LITTLE_WATER_BURNED_HOUSE_2, 15
 
-	warp_event 19, 3, LITTLE_WATER_GYM, 4
+	warp_event 19, 3, SHUDDER_CAVE_ENTRANCE, 2
 
     def_coord_events
 

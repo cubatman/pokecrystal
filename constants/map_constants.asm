@@ -518,7 +518,6 @@ ENDM
 	map_const LITTLE_WATER_CENTER,							 5,   4 ; 10
 	map_const LITTLE_WATER_BURNED_HOUSE,					 7,   5 ; 11
 	map_const LITTLE_WATER_BURNED_HOUSE_2,					 7,   5 ; 12
-	map_const LITTLE_WATER_UNDER_BURNED_HOUSES,				 12, 20 ; 13
 	endgroup											
 
 	; group hoot-hoot-hollow
@@ -531,6 +530,11 @@ ENDM
 	newgroup WANDER_FOREST
 	map_const WANDER_FOREST,                               12, 18
 	map_const HIDDEN_POWER_CLEARING,						6, 6
+	endgroup
+
+	newgroup SHUDDER_CAVE
+	map_const SHUDDER_CAVE_ENTRANCE,						19, 12 ; 1
+	map_const LITTLE_WATER_UNDER_BURNED_HOUSES,				12, 20 ; 2
 	endgroup
 
 
